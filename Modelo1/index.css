@@ -1,0 +1,28 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:100px 1000px 100px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"
+  
+  }
+  
+  .header{
+    background: red;
+    grid-area: header;
+  }
+  
+  .main{
+    background: yellow;
+    grid-area: main;
+  }
+  
+  .footer{
+    background:violet;
+    grid-area: footer;
+  }
+  
