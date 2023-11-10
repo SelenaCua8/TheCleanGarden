@@ -9,12 +9,12 @@
 }
 
 body{
-    background-color: #015b41;
+    background-color: white;
     min-width: 400px;
 }
 
 .header{
-    background-color: white;
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -53,7 +53,7 @@ body{
 
 .header .nav-links a{
     font-size: 700;
-    color: black; 
+    color: #015b41; 
 }
 
 .header .nav-links a:hover{
@@ -69,20 +69,21 @@ body{
 /**/.header .menu button{
     margin-left: 20px;
     font-weight: 700;
-    color: black;
+    color: #015b41;
+    background-color: white;
     padding: 9px 25px;
-    background: #015b41;
     border: none;
-    border-radius: 50px;
+    /*border-radius: 50px;*/
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 .header .btn button:hover,
 /**/.header .menu button:hover{
-    background-color: rgb(103, 235, 103);
+    /*background-color: rgb(103, 235, 103);*/
     color: #015b41;
     transform: scale(1.1);
+    text-decoration: underline;
 }
 /*Nav Mobile*/
 
@@ -98,7 +99,7 @@ body{
     z-index: 1;
     left: 0;
     top: 0;
-    background-color:#015b41;
+    background-color:white;
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
@@ -116,13 +117,12 @@ body{
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
-    font-weight: 700;
-    color: black;
+    color:#015b41 ;
 }
 
 .header .overlay a:hover, 
 .header .overlay a:focus{
-    color: #30be96;
+    color: #093025;
 }
 
 .header .overlay .close{
@@ -163,14 +163,15 @@ footer{
 
 footer .pie .sec h2{
     position: relative;
-    columns: #015b41;
+    columns: white;
     font-weight: 600;
     margin-bottom: 15px;
+    color: #015b41;
 
 }
 
 footer .pie .sec p{
-    color: #555;
+    color: #015b41;
 
 }
 footer .pie .sci{
@@ -185,14 +186,14 @@ footer .pie .sci li a{
     display: inline-block;
     width: 36px;
     height: 36px;
-    background:#015b41;
+    background:white;
     display: grid;
     align-content: center;
     justify-content: center;
     text-decoration: none;
 }
 footer .pie .sci li a i{
-    color: #fff;
+    color: #015b41;
     font-size: 20px;
 }
 footer .pie .quicklinks{
@@ -202,7 +203,7 @@ footer .pie .quicklinks ul li{
     list-style: none;
 }
 footer .pie .quicklinks ul li a{
-    color: #555;
+    color: #015b41;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
@@ -216,19 +217,19 @@ footer .pie .contact .info li{
     margin-bottom: 16px;
 }
 footer .pie .contact .info li span{
-    color: #555;
+    color: #015b41;
     font-size: 20px;
 }
 footer .pie .contact .info li a{
-    color: #555;
+    color: #015b41;
     text-decoration: none;
 }
 .copyrightText{
     width: 100%;
-    background: #fff;
+    background: white;
     padding: 20px 100px 30px;
     text-align: center;
-    color: black;
+    color: #015b41;
     border: 1px solid rgba(0,0,0,0.15);
 }
 
