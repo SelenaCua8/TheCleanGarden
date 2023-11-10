@@ -2,20 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar Dos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
 </head>
 <body>
-    <section class="container">
-        <section class="header">
-            HEADER
-        </section>
-        <section class="main">MAIN</section>
-        <section class="footer">FOOTER</section>
-        </section>
+    <header class="header">
+        <div class="logo">
+<!---->            <img src="../img/theCleanGarden.jpg" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="#"><button>Contact</button></a>
+
+<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#">Services</a>
+<!---->                <a href="#">Projects</a>
+<!---->                <a href="#">About</a>
+<!---->                <a href="#">Contact</a>
+<!---->            </div>
+<!---->        </div>
+
+    </header>
 
 
-    <script src="./index.js"></script>
+
+
+<!--FOOTER-->
+<footer>
+    <section class="footer">
+        <section class="pie">
+        <div class="sec aboutus">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem reprehenderit aliquam quos, itaque distinctio perspiciatis minima voluptatibus omnis saepe explicabo!</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope""></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>shop</h2>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Shoes</a></li>
+
+            </ul>
+
+        </div>
+        <div class="sec contact">
+            <h2>Contactanos</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa-brands fa-whatsapp"></i></span><p><a href="#">+54 11 26017576</a></p>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-envelope"></i></span><p><a href="#">selenac99@hotmail.com 
+
+                    </a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    </section>
+</footer>
+<div class="copyrightText">
+    <p>copiright 2023</p>
+</div>
+
+
+
+
+
+   <script type="text/javascript" src="./index.js"></script>
+
 </body>
 </html>
