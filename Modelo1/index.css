@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    margin: 25px;
+    padding: 25px;
+    background-color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+    min-width: 400px;
 }
-
 body{
     background-color: white;
     min-width: 400px;
@@ -132,9 +131,36 @@ body{
     font-size: 65px;
 }
 /*FIN HEADER*/
+/*MAIN*/
 
-
-
+.img-comp-container {
+    position: relative;
+    height: 200px; /*should be the same height as the images*/
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .img-comp-img img {
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
 
 
 /*FORMULARIO*/
