@@ -147,14 +147,15 @@ ul {
 .logo {
     text-align: center;
     font-size: 3em;
+    color: #015b41;
 }
 
 .logo span {
-    color: #B70E21;
+    color: #015b41;
 }
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    box-shadow: 0 8px 12px rgba(1, 91, 65, 0.8), 0 -8px 12px rgba(1, 91, 65, 0.8);
 }
 
 .contact-wrapper > * {
@@ -162,7 +163,7 @@ ul {
 }
 
 .contact-form {
-    background: #222222;
+    background: white;
 }
 
 .contact-form form {
@@ -191,20 +192,22 @@ ul {
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #d63031;
+    color: #015b41;
+    border-bottom: 1px solid #14322a;
 }
 
+
 .contact-form form button {
-    background: #B70E21;
+    background: #015b41;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
+    color: white;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #d63031;
+    background: #43d2aa;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
@@ -212,7 +215,7 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: #000;
+    background: #015b41;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
@@ -356,6 +359,61 @@ footer .pie .contact .info li a{
     .contact-info ul,
     .contact-info p {
         text-align: left;
+    }
+}
+/* Formulario Responsivo */
+@media (max-width: 700px) {
+    .content {
+        padding: 0 1em;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form .block {
+        grid-column: auto;
+    }
+}
+
+/* Ajustes de Estilos para Dispositivos Pequeños */
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .5em;
+}
+
+.contact-form form p {
+    padding: .5em;
+}
+
+.contact-form form button {
+    padding: 0.5em;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* Ajustes Adicionales para Dispositivos Muy Pequeños */
+@media (max-width: 500px) {
+    .contact-form form button {
+        padding: 0.3em;
+    }
+}
+
+/* Ajustes para Pantallas Pequeñas en General */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2em;
     }
 }
 /*QUERIE FOOTER*/
