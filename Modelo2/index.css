@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #fff59d;
+    background: white;
 }
 
 .header{
@@ -130,6 +130,61 @@ body{
   right: 45px;
   font-size: 65px;
 }
+/*FIN HEADER*/
+/*MAIN*/
+/*.main-section {
+  background-color: #f0f0f0;
+  padding: 40px;
+  margin: 400px;
+}
+
+.content-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Ajusta el ancho máximo según tus preferencias */
+  /*margin: 0 auto; /* Centra el contenid
+}
+
+.text {
+  max-width: 400px;
+}
+
+.text h2 {
+  color: #015b41; /* Color del texto, puedes cambiarlo */
+
+/*main section div img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+}*/
+
+.main-content{
+ background-color: rgb(241, 241, 241);
+  display: flex;
+  padding: 5px 10%;
+  
+}
+.img-main{
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  padding: 25px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 400px; 
+  padding-left: 100px;
+  color: green;
+  
+}
+
+
+/*FIN MAIN*/
 
 /*QUERIES HEADER*/
 @media screen and (max-height:450px) {
