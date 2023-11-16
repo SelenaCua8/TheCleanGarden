@@ -176,7 +176,76 @@ body{
 
 
 
+/*CARRUSEL*/
+body-slider{
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    
+}
 
+.h1-marcas{
+    text-align: center;
+    padding: 25px;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Variables */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+}
+
+/* Styling */
+
+    
+    
+.sliderr {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    padding: 50px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Agrega esta línea */
+}
+
+.sliderr::before,
+.sliderr::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.sliderr::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.sliderr::before {
+    left: 0;
+    top: 0;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slide {
+    height: 100px;
+    width: 250px;
+}
+
+
+/*FIN CARRUSEL*/
 
 /*FORMULARIO*/
 
