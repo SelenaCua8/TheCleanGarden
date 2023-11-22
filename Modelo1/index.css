@@ -8,6 +8,7 @@ body {
     font-size: 20px;
     min-width: 400px;
 }
+/*HEADER*/
 
 .header {
     display: flex;
@@ -122,7 +123,8 @@ body {
     right: 45px;
     font-size: 65px;
 }
-
+/*FIN HEADER*/
+/*MAIN IMAGEN GRANDE*/
 .main {
     display: flex;
     align-items: center;
@@ -159,10 +161,29 @@ body {
     width: 100%;
     border-radius: 20px;
 }
+.buttons {
+    margin-top: 20px; /* Ajusta el espaciado entre el h2 y los botones según sea necesario */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px; /* Ajusta el espaciado entre los botones según sea necesario */
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Color del texto */
+    border: 1px solid #4CAF50; /* Borde con color verde */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+}
+
+button:hover {
+    background-color: #4CAF50; /* Cambia el color al pasar el ratón sobre el botón */
+    color: white; /* Cambia el color del texto al pasar el ratón */
+}
+/*FIN MAIN IMAGEN GRANDE*/
 
 /*NOSOTROS*/
-
-
 .main-1 {
     display: flex;
     flex-wrap: wrap;
