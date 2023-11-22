@@ -32,3 +32,5 @@ window.addEventListener('load', function() {
 
     setInterval(cambiarImagenes, 3000);
 });
+
+/*IMAGEN DE NOSOTROS*/

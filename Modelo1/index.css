@@ -160,9 +160,36 @@ body {
     border-radius: 20px;
 }
 
+/*NOSOTROS*/
+
+
 .main-1 {
-    background-color: #43d2aa;
-    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-2 {
+    flex: 1;
+    margin: 15px;
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Pone la imagen al final del contenedor */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.text {
+    flex: 1; /* El contenido de texto ocupa el espacio restante */
+    padding-right: 15px; /* Espaciado a la derecha del contenido de texto */
+}
+
+.img-aboutus {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: cover; /* La imagen se ajusta al tamaño del contenedor */
 }
 
 /* CARRUSEL */
