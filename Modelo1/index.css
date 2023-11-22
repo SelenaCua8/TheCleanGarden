@@ -313,7 +313,7 @@ ul {
 
 footer {
     display: grid;
-    justify-content: center;
+    justify-content: end;
     align-content: end;
     min-height: 100vh;
     background: e8e8e8;
