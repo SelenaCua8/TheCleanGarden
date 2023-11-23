@@ -204,8 +204,81 @@
 /*FIN NOSOTROS*/
 
 /*¿QUÉ HACEMOS?*/
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
 
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px; /* Ajusta el ancho según tus necesidades */
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius: 15px;
+    font-family: sans-serif;
+    background-color: #d4f7e0; /* Color verde claro, puedes ajustar este valor */
+    color: #005200; /* Verde oscuro para el texto, puedes ajustar este valor */
+}
+
+.card-title {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
+    flex: 1 1 100%;
+}
+
+.card-footer {
+    background: #aad4aa; /* Color verde claro, puedes ajustar este valor */
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: #005200; /* Verde oscuro para el texto del enlace, puedes ajustar este valor */
+    transition: color 0.3s; /* Añadimos una transición para suavizar el cambio de color */
+    position: relative; /* Añadimos posición relativa para el seudoelemento */
+}
+
+.card-footer a:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Ajustamos el índice z para que esté detrás del texto */
+    content: "";
+    background-color: #005200; /* Verde oscuro para el fondo del seudoelemento */
+    border-radius: 0 0 15px 15px;
+    transform: scaleX(0); /* Inicialmente, el seudoelemento tiene una escala X de 0 */
+    transform-origin: 0 50%; /* El punto de transformación está en el lado izquierdo */
+    transition: transform 0.3s; /* Añadimos una transición para suavizar la animación de crecimiento */
+}
+
+.card-footer:hover, a:hover:after {
+    transform: scaleX(1); /* Al pasar el ratón por encima, la escala X del seudoelemento se establece en 1, mostrándolo completamente */
+    background-color: #4CAF50; /* Cambia el color al pasar el ratón sobre el botón */
+    color: white; 
+}
 /*FIN ¿QUÉ HACEMOS?*/
 
 /* CARRUSEL CLIENTES */
