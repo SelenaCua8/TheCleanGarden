@@ -234,6 +234,10 @@
     background-color: #d4f7e0; /* Color verde claro, puedes ajustar este valor */
     color: #005200; /* Verde oscuro para el texto, puedes ajustar este valor */
 }
+.card-img{
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto;
+} 
 
 .card-title {
     font-size: 24px;
