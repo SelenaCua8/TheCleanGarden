@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');body {
     margin: 25px;
     padding: 25px;
     background-color: white;
@@ -9,7 +7,6 @@ body {
     min-width: 400px;
 }
 /*HEADER*/
-
 .header {
     display: flex;
     justify-content: flex-end;
@@ -17,50 +14,40 @@ body {
     height: 85px;
     padding: 5px 10%;
 }
-
 .header .logo {
     cursor: pointer;
     margin-right: auto;
 }
-
 .header .logo img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
-
 .header .logo img:hover {
     transform: scale(1.2);
 }
-
 .header .nav-links {
     list-style: none;
 }
-
 .header .nav-links li {
     display: inline-block;
     padding: 0 20px;
 }
-
 .header .nav-links li:hover,
 .overlay a:hover {
     transform: scale(1.1);
 }
-
 .header .nav-links a {
     font-size: 700;
     color: #015b41;
 }
-
 .header .nav-links a:hover {
     color: #015b41;
     font-weight: bold;
 }
-
 .menu {
     display: none;
 }
-
 .header .btn button,
 .menu button {
     margin-left: 20px;
@@ -72,18 +59,15 @@ body {
     transition: all 0.3s ease 0s;
     font-weight: 700;
 }
-
 .header .btn button:hover,
 .menu button:hover {
     color: #015b41;
     transform: scale(1.1);
     text-decoration: underline;
 }
-
 .header a {
     text-decoration: none;
 }
-
 .header .overlay {
     height: 100%;
     width: 0;
@@ -95,7 +79,6 @@ body {
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
-
 .header .overlay .overlay-content {
     display: flex;
     height: 100%;
@@ -103,7 +86,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .header .overlay a {
     padding: 15px;
     font-size: 36px;
@@ -111,12 +93,10 @@ body {
     transition: all 0.3s ease 0s;
     color: #015b41;
 }
-
 .header .overlay a:hover,
 .header .overlay a:focus {
     color: #093025;
 }
-
 .header .overlay .close {
     position: absolute;
     top: 20px;
@@ -124,6 +104,7 @@ body {
     font-size: 65px;
 }
 /*FIN HEADER*/
+
 /*MAIN IMAGEN GRANDE*/
 .main {
     display: flex;
@@ -183,41 +164,8 @@ body {
 }
 /*FIN MAIN IMAGEN GRANDE*/
 
+
 /*NOSOTROS*/
-/* Estilo común para columnas, filas y filas internas */
-/* Estilos para la sección principal (main-2) */
-/*.main-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.text-content {
-    text-align: center;
-}
-
-.text-content h1,
-.text-content h2,
-.text-content p {
-    margin-bottom: 15px;
-}
-
-.img-aboutus {
-    border-radius: 50%;
-    max-width: 200px;
-    margin-top: 20px; /* Puedes ajustar el margen superior según sea necesario */
-
-/*.img-aboutus{
-    display:inline-block;
-    vertical-align:top;
-    width: 400px;
-    height: 400px;
-}
-.aboutus{
-    display:inline-block;
-}
-*/
 .main-2 {
     background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
     padding: 50px; /* Añadido espacio alrededor del contenido */
@@ -253,7 +201,14 @@ body {
     left: 50%; /* Ajusta la posición horizontal según sea necesario */
     transform: translate(-500px, 60px);
 }
-/* CARRUSEL */
+/*FIN NOSOTROS*/
+
+/*¿QUÉ HACEMOS?*/
+
+
+/*FIN ¿QUÉ HACEMOS?*/
+
+/* CARRUSEL CLIENTES */
 body-slider {
     align-items: center;
     display: flex;
@@ -319,7 +274,9 @@ ul {
     list-style: none;
     padding: 0;
 }
+/*CLIENTES*/
 
+/*FORMULARIO*/
 .logo {
     text-align: center;
     font-size: 3em;
@@ -398,7 +355,10 @@ ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
+/*FIN CONTACTO*/
 
+
+/*FOOTER*/
 footer {
     display: grid;
     justify-content: end;
@@ -472,18 +432,18 @@ footer .pie .quicklinks ul li a {
     display: inline-block;
 }
 
-footer .pie .contact .info li {
+footer .pie .contact .info-footer li {
     display: grid;
     grid-template-columns: 30px 1fr;
     margin-bottom: 16px;
 }
 
-footer .pie .contact .info li span {
+footer .pie .contact .info-footer li span {
     color: #015b41;
     font-size: 20px;
 }
 
-footer .pie .contact .info li a {
+footer .pie .contact .info-footer li a {
     color: #015b41;
     text-decoration: none;
 }
@@ -496,13 +456,12 @@ footer .pie .contact .info li a {
     color: #015b41;
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
+/*FIN FOOTER*/
 
+/*QUERIES*/
 /* Queries Header */
 @media screen and (max-height: 450px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+  
     .header .overlay a {
         font-size: 20px;
     }
@@ -515,10 +474,7 @@ footer .pie .contact .info li a {
 }
 
 @media screen and (max-width: 800px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+
     .nav-links,
     .btn {
         display: none;
@@ -531,11 +487,6 @@ footer .pie .contact .info li a {
 
 /* Queries Formulario */
 @media (min-width: 700px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    
 
     .contact-wrapper {
         display: grid;
@@ -555,10 +506,7 @@ footer .pie .contact .info li a {
 
 /* Formulario Responsivo */
 @media (max-width: 700px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+
     .content {
         padding: 0 1em;
     }
@@ -601,10 +549,7 @@ footer .pie .contact .info li a {
 
 /* Ajustes Adicionales para Dispositivos Muy Pequeños */
 @media (max-width: 500px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+
     .contact-form form button {
         padding: 0.3em;
     }
@@ -619,10 +564,7 @@ footer .pie .contact .info li a {
 
 /* Queries Footer */
 @media (max-width: 991px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+
     .footer {
         padding: 40px;
     }
@@ -640,10 +582,7 @@ footer .pie .contact .info li a {
 }
 
 @media (max-width: 768px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
+
     .footer {
         padding: 40px;
     }
@@ -657,10 +596,6 @@ footer .pie .contact .info li a {
 }
 /*RESPONSIVE    */
 @media only screen and (max-width: 600px) {
-    body{
-        margin: 0;
-        padding: 0;
-    }
     .content-wrapper {
         font-size: 1rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
     }
@@ -678,10 +613,7 @@ footer .pie .contact .info li a {
 /* Estilos para pantallas pequeñas (responsive) */
 
 @media only screen and (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
+ 
 
     .main-2 {
         flex-direction: column; /* Cambia a una disposición de columna */
@@ -706,5 +638,9 @@ footer .pie .contact .info li a {
 
     .img-below {
         display: none; /* Oculta la segunda imagen en pantallas pequeñas */
+    }
+    .copyrightText{
+        margin: 0;
+        
     }
 }
