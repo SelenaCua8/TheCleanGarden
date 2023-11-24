@@ -137,6 +137,9 @@
     font-size: xx-large;
     font-weight: 300;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+    padding: 100px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -149,6 +152,7 @@
     width: 100%;
     border-radius: 20px;
 }
+
 .buttons {
     margin-top: 20px; /* Ajusta el espaciado entre el h2 y los botones según sea necesario */
 }
@@ -157,7 +161,7 @@
     padding: 10px 20px;
     font-size: 16px;
     margin-right: 10px; /* Ajusta el espaciado entre los botones según sea necesario */
-    background-color: transparent; /* Fondo transparente */
+    background-color: #4CAF50; /* Fondo verde */
     color: white; /* Color del texto */
     border: 1px solid #4CAF50; /* Borde con color verde */
     border-radius: 5px;
@@ -166,8 +170,11 @@
 }
 
 .contact-button:hover, .about-us-button:hover {
-    background-color: #4CAF50; /* Cambia el color al pasar el ratón sobre el botón */
+    background-color: #4CAF50; /* Mantén el fondo verde al pasar el ratón sobre el botón */
     color: white; /* Cambia el color del texto al pasar el ratón */
+}
+.overlay-text{
+    font-size: 4.0rem;
 }
 /*FIN MAIN IMAGEN GRANDE*/
 
