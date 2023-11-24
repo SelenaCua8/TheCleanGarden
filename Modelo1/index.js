@@ -8,7 +8,7 @@ function closeNav(){
     document.getElementById("mobile-menu").style.width = "0%";
 }
 /*FUNCION PARA CAMBIO DE IMAGEN*/ 
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
     console.log('El contenido ha cargado');
 
     var imagenes = [];

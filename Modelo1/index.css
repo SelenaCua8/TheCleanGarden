@@ -125,57 +125,53 @@
 .parallax {
     position: relative;
     overflow: hidden;
+    
 }
 
 .content-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #4CAF50;
-    font-size: xx-large;
-    font-weight: 300;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
-    padding: 100px; /* Espaciado interno */
-    border-radius: 10px; /* Borde redondeado */
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    transform: translate(-220%, -50%);
+    text-align: left;
+    color: white;
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.contact-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.content-wrapper:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+.contact-button:hover {
+    background-color: #45a049;
 }
 
 .arbol {
     width: 100%;
     border-radius: 20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
 }
-
 .buttons {
-    margin-top: 20px; /* Ajusta el espaciado entre el h2 y los botones según sea necesario */
+    margin-top: 20px;
+    
 }
 
-.contact-button, .about-us-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-right: 10px; /* Ajusta el espaciado entre los botones según sea necesario */
-    background-color: #4CAF50; /* Fondo verde */
-    color: white; /* Color del texto */
-    border: 1px solid #4CAF50; /* Borde con color verde */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
-}
+    .word {
+        font-size: 5rem;
+        display: block;
+        line-height: 1.0;
+        
+    }
+   
 
-.contact-button:hover, .about-us-button:hover {
-    background-color: #4CAF50; /* Mantén el fondo verde al pasar el ratón sobre el botón */
-    color: white; /* Cambia el color del texto al pasar el ratón */
-}
-.overlay-text{
-    font-size: 4.0rem;
-}
 /*FIN MAIN IMAGEN GRANDE*/
 
 
@@ -763,5 +759,36 @@ footer .pie .contact .info-footer li a {
     .copyrightText{
         margin: 0;
         
+    }
+}
+
+
+/* Media query para tamaños de pantalla medianos */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        font-size: 3rem;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+    }
+
+    .word {
+        font-size: 4rem;
+    }
+}
+
+/* Media query para tamaños de pantalla pequeños */
+@media screen and (max-width: 480px) {
+    .content-wrapper {
+        font-size: 2rem;
+    }
+
+    .contact-button {
+        font-size: 0.8rem;
+    }
+
+    .word {
+        font-size: 3rem;
     }
 }
