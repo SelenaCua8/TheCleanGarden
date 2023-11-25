@@ -790,5 +790,33 @@ footer .pie .contact .info-footer li a {
         font-size: small;
     }
 }
+@media (max-width: 500px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .word {
+        font-size: 1.0rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        transform: translate(280px, 30px);
+    }
+
+    .buttons {
+        
+        transform: translate(250px, 15px);
+        
+    }
+
+    .contact-button {
+
+        font-size: xx-small;
+    }
+
+    
+}
 /*FIN RESPONSIVO IMAGEN GRANDE*/
 
