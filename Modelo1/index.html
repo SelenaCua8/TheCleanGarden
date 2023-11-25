@@ -13,33 +13,32 @@
 </head>
 <body>
 <!--HEADER-->
-    <header class="header">
-        <div class="logo">
-          <img src="../img/theCleanGarden.jpg" alt="Logo de la marca">
-        </div>
+<header class="header">
+    <div class="logo">
+<!---->            <img src="../img/theCleanGarden.jpg" alt="Logo de la marca">
+    </div>
+    <nav>
+       <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+       </ul>            
+    </nav>
+    <a class="btn" href="#"><button>Contact</button></a>
 
-        <nav>
-           <ul class="nav-links">
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">TRABAJOS</a></li>
-                <li><a href="#">¿QUÉ HACEMOS?</a></li>
-           </ul>            
-        </nav>
-            <a class="btn" href="#"><button style="font-size: larger;">Contacto</button></a>
+<!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
 
-            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a href="#">Services</a>
+<!---->                <a href="#">Projects</a>
+<!---->                <a href="#">About</a>
+<!---->                <a href="#">Contact</a>
+<!---->            </div>
+<!---->        </div>
 
-        <div id="mobile-menu" class="overlay">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
-           <div class="overlay-content">
-               <a href="#">Nosotros</a>
-               <a href="#">Trabajos</a>
-               <a href="#">¿Qué hacemos?</a>
-              <a href="#">Contacto</a>
-            </div>
-       </div>
-
-    </header>
+</header>
 <!--FIN HEADER-->
 
 <!--MAIN-->

@@ -572,10 +572,14 @@ footer .pie .contact .info-footer li a {
 /*FIN FOOTER*/
 
 /*QUERIES*/
-/* Queries Header */
+/* UERIES HEADER*/
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2em;
+    }}
+   
 @media screen and (max-height: 450px) {
-  
-    .header .overlay a {
+  .header .overlay a {
         font-size: 20px;
     }
 
@@ -596,13 +600,15 @@ footer .pie .contact .info-footer li a {
     .menu {
         display: inherit;
     }
-     .btn{
+    .btn button{
         display: none;
 
     }
+     
 }
+/*FIN QUERIES HEADER*/
 
-/* Queries Formulario */
+/* FORMULARIO RESPONSIVO */
 @media (min-width: 700px) {
 
     .contact-wrapper {
@@ -620,8 +626,6 @@ footer .pie .contact .info-footer li a {
         text-align: left;
     }
 }
-
-/* Formulario Responsivo */
 @media (max-width: 700px) {
 
     .content {
@@ -640,44 +644,36 @@ footer .pie .contact .info-footer li a {
         grid-column: auto;
     }
 }
-
-/* Ajustes de Estilos para Dispositivos Pequeños */
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
     width: 100%;
     padding: .5em;
 }
-
 .contact-form form p {
     padding: .5em;
 }
-
 .contact-form form button {
     padding: 0.5em;
 }
-
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
     text-align: center;
     margin: 0.5rem 0 1rem 0;
 }
-
 /* Ajustes Adicionales para Dispositivos Muy Pequeños */
 @media (max-width: 500px) {
 
     .contact-form form button {
         padding: 0.3em;
     }
-}
-
-/* Ajustes para Pantallas Pequeñas en General */
-@media (max-width: 600px) {
-    .logo {
-        font-size: 2em;
+    .contact-header{
+        display: none;
     }
 }
+/*FIN FORMULARIO RESPONSIVE*/
+
 
 /* Queries Footer */
 @media (max-width: 991px) {
@@ -696,6 +692,9 @@ footer .pie .contact .info-footer li a {
     .copyrightText {
         padding: 20px 40px 30px;
     }
+    .contact-header{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -711,6 +710,8 @@ footer .pie .contact .info-footer li a {
         grid-gap: 20px;
     }
 }
+
+
 /*RESPONSIVE    */
 @media only screen and (max-width: 600px) {
     .content-wrapper {
@@ -727,7 +728,11 @@ footer .pie .contact .info-footer li a {
         margin-bottom: 10px; /* Añade un espacio entre los botones */
     }
 }
-/* Estilos para pantallas pequeñas (responsive) */
+
+
+
+
+/* SOBRE NOSOTROS */
 
 @media only screen and (max-width: 768px) {
  
@@ -760,35 +765,7 @@ footer .pie .contact .info-footer li a {
         margin: 0;
         
     }
+    
 }
 
 
-/* Media query para tamaños de pantalla medianos */
-@media screen and (max-width: 768px) {
-    .content-wrapper {
-        font-size: 3rem;
-    }
-
-    .contact-button {
-        font-size: 1rem;
-    }
-
-    .word {
-        font-size: 4rem;
-    }
-}
-
-/* Media query para tamaños de pantalla pequeños */
-@media screen and (max-width: 480px) {
-    .content-wrapper {
-        font-size: 2rem;
-    }
-
-    .contact-button {
-        font-size: 0.8rem;
-    }
-
-    .word {
-        font-size: 3rem;
-    }
-}
