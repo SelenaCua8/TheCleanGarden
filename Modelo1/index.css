@@ -120,6 +120,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    
 }
 
 .parallax {
@@ -164,14 +165,13 @@
     
 }
 
-    .word {
+.word {
         font-size: 5rem;
         display: block;
         line-height: 1.0;
         
     }
    
-
 /*FIN MAIN IMAGEN GRANDE*/
 
 
@@ -767,5 +767,28 @@ footer .pie .contact .info-footer li a {
     }
     
 }
+/*RESPONSIVO IMAGEN GRANDE*/
+@media only screen and (max-width: 768px) {
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
 
+    }
+    .word {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        transform: translate(350px, 50px);
+    }
+
+    .buttons {
+        
+        transform: translate(310px, -10px);
+        
+    }
+
+    .contact-button {
+
+        font-size: small;
+    }
+}
+/*FIN RESPONSIVO IMAGEN GRANDE*/
 
