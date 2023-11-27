@@ -7,6 +7,10 @@
     font-size: 20px;
     min-width: 400px;
 }
+body{
+    padding: 5px 10%;
+
+}
 /*HEADER*/
 .header {
     display: flex;
@@ -19,11 +23,13 @@
 .header .logo {
     cursor: pointer;
     margin-right: auto;
+    transform: translateX(-80px)
 }
 .header .logo img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
+    transform: translateX(-80px);
 }
 .header .logo img:hover {
     transform: scale(1.2);
@@ -37,7 +43,6 @@
     padding: 0 20px;
     
 }
-
 
 .header .nav-links li:hover,
 .overlay a:hover {
@@ -216,39 +221,36 @@
 /*¿QUÉ HACEMOS?*/
 .quehacemos{
     background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
+    padding: 50px; /* Añadido espacio alrededor del contenido */
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    max-width: 100%; /* Ajusta el ancho del contenido de texto según sea necesario */
-
-    color: #4CAF50; /* Color de texto verde */
-
+    align-items: left;
+    text-align: left;
 }
 .quehacemos h1{
     color: #2E7D32; /* Color verde oscuro para los títulos */
-    font-weight: bold; /* Texto en negrita para los títulos */
-    text-align: left;
+    font-weight: bold;
+    
 }
 .quehacemos p{
+    color: #4CAF50;
     
-    padding: 50px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(76, 175, 80, 0.1);
+    padding: 35px;
+    
 }
 
 .card-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 55px;
-    justify-content: space-around;
-    padding-top: 100px;
-}
-
-.card-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 55px;
-    justify-content: space-around;
+    gap: 30px;
+    
     padding-top: 100px;
 }
 
@@ -320,6 +322,7 @@
     color: #015b41;;
 }
 /*FIN ¿QUÉ HACEMOS?*/
+
 
 /* CARRUSEL CLIENTES */
 body-slider {
@@ -577,6 +580,13 @@ footer .pie .contact .info-footer li a {
     .logo {
         font-size: 2em;
     }}
+    .header .logo img {
+       
+        transform: translateX(0px);}
+        .header .logo 
+        {
+       
+            transform: translateX(0px);}
    
 @media screen and (max-height: 450px) {
   .header .overlay a {

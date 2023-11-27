@@ -72,18 +72,6 @@
     </div>
    
     <!--<div class="main-2">
-    <!--
-    <div class="main-2">
-        <img src="" alt="">
-        <h1>CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h1>
-        <p>Ejecutamos tareas de construcción de espacios verdes de toda índole, cualquiera sea su escala.
-            Contamos con una gran experiencia en el área presentando propuestas a medida de cada cliente. <br>
-            Ejemplo de tareas que se realizan en este tipo de obras: <br>
-            Replanteos de obra, movimientos de tierra y nivelaciones. plataciones, forestaciones, transplantes de ejemplares, implantación de césped, formación de canteros, construcción de caminos. senderos y mobiliario, instalación de sistema de riego, etc.
-        </p>
-        <h2>CONSTRUCCIÓN Y MANTENIMIENTO DE CAMPOS DEPORTIVOS</h2>
-        <p>Construcción y mantenimiento de campos deportivos. En virtud de ello efectuamos las tareas iniciales de nivelación, desmonte, terrapleando, construcción de drenes, conformación de estratos, drenaje y portante e implementación de céspedm para luego pasar a las tareas clásicas de mantenimiento tales como corte, riego, fertilización, aireación y descompactado de la capa portante, corte vertical y eliminación de thatch, top-dressing, resiembra, etc.</p>
-    </div>
     <div class="main-2">
         <img src="" alt="">
         <h1>PODA, TRANSPLANTE Y EXTRACCIONES EJEMPLARES</h1>
@@ -148,11 +136,12 @@
 
 <!--QUE HACEMOS-->
 <div class="quehacemos">
-    <h1 style="text-align: center; padding-top: 50px; color: green;">ÁREAS PRINCIPALES</h1>
+    <h1>ÁREAS PRINCIPALES</h1>
     <p>Los espacios verdes requieren un mantenimiento que varía de acuerdo a sus funciones, modalidad de uso y estacionalidad, para lo cual deben contar con un adecuado programa que les permita conservarlos en su mejor forma a lo largo de todo el año.
         Brindamos servicios de mantenimiento a todo tipo de espacios verdes, públicos o privados, adecuando el programa a los requerimientos y necesidades de cada uno de ellos
     </p>
 </div>
+
 
 <div class="card-content">
    <!-- <div class="card">
@@ -169,7 +158,7 @@
         <h2 class="card-title">CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h2>
 
             <div class="card-body"> 
-                 <img src="../img/TheCleanGardenimg1.jpg" alt="muestra" class="card-img">
+                 <!--<img src="../img/TheCleanGardenimg1.jpg" alt="muestra" class="card-img">-->
     
     </div>
 
@@ -251,10 +240,8 @@
 </div>
 </div>
 <!--FIN QUE HACEMOS-->
-<section class="green">
-    <img src="../img/TheCleanGardenimg2.jpg" alt="">
-    <img src="../img/TheCleanGardenimg3.jpg" alt="">
-    <div>
+<section class="green" id="animationSection">
+    <div class="gren-content">
     <h1>CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h1>
     <p>Ejecutamos tareas de construcción de espacios verdes de toda índole, cualquiera sea su escala.
         Contamos con una gran experiencia en el área presentando propuestas a medida de cada cliente. <br>
@@ -263,22 +250,34 @@
     </p>
     <h2>CONSTRUCCIÓN Y MANTENIMIENTO DE CAMPOS DEPORTIVOS</h2>
     <p>Construcción y mantenimiento de campos deportivos. En virtud de ello efectuamos las tareas iniciales de nivelación, desmonte, terrapleando, construcción de drenes, conformación de estratos, drenaje y portante e implementación de céspedm para luego pasar a las tareas clásicas de mantenimiento tales como corte, riego, fertilización, aireación y descompactado de la capa portante, corte vertical y eliminación de thatch, top-dressing, resiembra, etc.</p>
-</div>
+    <div class="image-container">
+        <img src="../img/hombre-granja-cosiendo-hierba-cortacesped.jpg" alt="" style="width: 400px; height: 400px;" class="img-content" id="animatedImage">
+    </div>
+    <style>
+   .image-container:hover
+      {-webkit-transform:scale(0.5);transform:scale(0.5);}
+      .image-container {overflow:hidden;}
+   
+
+    </style>
+   
+    </div>
+<!--<div style="position: relative; left: 0; top: 0; display: flex; gap: 40px;">
+    <img src="../img/TheCleanGardenimg2.jpg" alt="" class="eye">
+    <img src="../img/TheCleanGardenimg3.jpg" alt="" class="heaven">
+</div>-->
 </section>
 <style>
     .green {
     display: flex;
    flex-direction: column;
-    
+    padding: 20px;
+    padding-top: 100px;
 
     
     background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
 }
 
-.green img {
-    max-width: 50%;
-    height: auto;
-}
 
 .green div {
     max-width: 100%;
@@ -291,6 +290,16 @@
     font-weight: bold;
 }
 
+.eye{
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 400px;
+}
+.heaven{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+}
 @media (max-width: 768px) {
     .green {
         flex-direction: column;
@@ -305,6 +314,19 @@
     }
 }
 
+</style>
+
+<style>
+    .green{
+        background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
+    padding: 50px; /* Añadido espacio alrededor del contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+   
+    }
+    
 </style>
 
 
@@ -359,7 +381,7 @@ Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendacio
         display: flex;
         justify-content: space-between;
         background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
-       
+       padding-top: 50px;
         margin: auto;
     }
 

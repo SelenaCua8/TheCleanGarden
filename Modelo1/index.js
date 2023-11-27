@@ -67,3 +67,6 @@ let swiperCards = new Swiper(".card__content", {
     interval: 2000,  // Especifica el tiempo de cambio entre diapositivas (en milisegundos)
     wrap: true       // Permite que el carrusel vuelva al principio después de llegar al final
   });
+
+
+ 
