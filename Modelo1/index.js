@@ -71,30 +71,4 @@ function closeNav(){
 
  //CARD CONTENT*/
 
- document.addEventListener('DOMContentLoaded', function() {
-  const productContainer = document.querySelector('.product-container-inner');
-  const preBtn = document.querySelector('.pre-btn');
-  const nxtBtn = document.querySelector('.nxt-btn');
-
-  let currentIndex = 0;
-  const cardWidth = 260; // Ajusta según el ancho de tus tarjetas
-
-  nxtBtn.addEventListener('click', function() {
-    if (currentIndex < productContainer.children.length - 3) {
-      currentIndex++;
-      updateProductContainer();
-    }
-  });
-
-  preBtn.addEventListener('click', function() {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateProductContainer();
-    }
-  });
-
-  function updateProductContainer() {
-    const translateValue = -currentIndex * cardWidth;
-    productContainer.style.transform = `translateX(${translateValue}px)`;
-  }
-});
+ 
