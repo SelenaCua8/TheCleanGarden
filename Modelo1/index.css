@@ -17,7 +17,7 @@ body{
     justify-content:space-between;
     align-items: center;
     height: 85px;
-    padding: 5px 10%;
+    padding: 50px;
    
 }
 .header .logo {
@@ -237,89 +237,77 @@ body{
     
 }
 
+
+/*CARDCONTENT*/
 .card-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    background-color: rgba(76, 175, 80, 0.1);
-    padding: 35px;
-    
+    flex-direction: row;
+    gap: 20px;
 }
 
-.card-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-    padding-top: 100px;
+.card-header {
+    height: 300px; /* Ajustada la altura */
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
 }
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 450px; /* Ajusta el ancho según tus necesidades */
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius: 15px;
-    font-family: sans-serif;
-    background-color: #d4f7e0; /* Color verde claro, puedes ajustar este valor */
-    color: #005200; /* Verde oscuro para el texto, puedes ajustar este valor */
-}
-.card-img{
-    max-width: 100%; /* La imagen no será más ancha que su contenedor */
-    height: auto;
-} 
 
 .card-title {
-    font-size: 24px;
-    padding: 10px;
+    text-align: center;
+    margin: 10px 0; /* Agregado un pequeño margen arriba y abajo */
+}
+
+.card-description {
+    flex-grow: 1;
+}
+
+.card-header img {
+    border-radius: 10px 10px 0 0;
+    width: 100%; /* Asegurando que la imagen del encabezado ocupe el 100% del ancho */
+    height: 100%; /* Asegurando que la imagen del encabezado ocupe el 100% de la altura */
+    object-fit: cover;
 }
 
 .card-body {
-    padding: 10px;
-    flex: 1 1 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: justify;
+    border: 1px solid #ccc;
 }
 
-.card-footer {
-    background: #aad4aa; /* Color verde claro, puedes ajustar este valor */
-    border-radius: 0 0 15px 15px;
-    padding: 10px;
-    text-align: center;
-}
-
-.card-footer a {
+.btn {
+    display: block;
+    background-color: var(--secondary);
+    padding: 10px; /* Ajustado el padding */
     text-decoration: none;
-    color: #005200; /* Verde oscuro para el texto del enlace, puedes ajustar este valor */
-    transition: color 0.3s; /* Añadimos una transición para suavizar el cambio de color */
-    position: relative; /* Añadimos posición relativa para el seudoelemento */
-}
-
-.card-footer a:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1; /* Ajustamos el índice z para que esté detrás del texto */
-    content: "";
-    background-color: #005200; /* Verde oscuro para el fondo del seudoelemento */
-    border-radius: 0 0 15px 15px;
-    transform: scaleX(0); /* Inicialmente, el seudoelemento tiene una escala X de 0 */
-    transform-origin: 0 50%; /* El punto de transformación está en el lado izquierdo */
-    transition: transform 0.3s; /* Añadimos una transición para suavizar la animación de crecimiento */
-}
-
-.card-footer:hover, a:hover:after {
-    transform: scaleX(1); /* Al pasar el ratón por encima, la escala X del seudoelemento se establece en 1, mostrándolo completamente */
-    background-color: #4CAF50; /* Cambia el color al pasar el ratón sobre el botón */
-    color: white; 
-}
-.card h2{
+    color: #fff;
     text-align: center;
-    margin-top: 20px;
-    font-weight: bolder;
-    color: #015b41;;
+    margin-top: 15px; /* Ajustado el margen arriba */
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Asegurando que la tarjeta ocupe toda la altura disponible en la cuadrícula */
+    }
+
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
 }
 /*FIN ¿QUÉ HACEMOS?*/
 
