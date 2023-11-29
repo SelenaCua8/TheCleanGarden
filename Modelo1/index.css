@@ -258,19 +258,22 @@ body{
 }
 
 .card-header {
-    height: 300px; /* Ajustada la altura */
+    height: 300px;
+     /* Ajustada la altura */
     /*width: 100%;
     /*object-position: 50% 50%;
     object-fit: cover;*/
     overflow: hidden; 
    
+   
     
     
 }
 
+
 .card-title {
     text-align: center;
-    margin: 10px 0;
+    padding-top: 20px;
     text-transform: uppercase;
     
 }
@@ -288,18 +291,21 @@ body{
    
  
 }
+.card-body{
+    padding: 0;
+    margin-top: auto;
+}
 
 .card-body .btn-card {
     display: block;
     background-color: #006400; /* Color verde oscuro */
-    margin: 0; 
-    padding: 20px;/* Ajustado el padding */
+    padding: 20px; /* Ajusta el padding según tus necesidades */
     text-decoration: none;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 15px; /* Ajustado el margen arriba */
-    transition: background-color 0.3s; 
+    margin-top: auto; /* Coloca el botón en la parte inferior */
+    transition: background-color 0.3s;
 }
 
 .btn-card:hover {
@@ -325,30 +331,148 @@ body{
         flex-direction: column;
     }
 }
+.green {
+    background-color: white;
+    color:black;
+    padding: 50px;
+    text-align: center;
+}
+
+.gren-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.green-div {
+    
+    /*max-width: 600px;*/
+    max-width: 50%;
+    text-align: left;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+}
+
+.img-content {
+    width: 400px;
+    height: 400px;
+    max-width: 100%; /* Ajusta según tu necesidad */
+    max-height: 100%; /* Ajusta según tu necesidad */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor */
+    border-top-left-radius: 0; /* Esquina superior izquierda redonda */
+    border-bottom-right-radius: 0; /* Esquina inferior derecha redonda */
+    border-top-right-radius: 0; /* Esquina superior derecha punteaguda */
+    border-bottom-left-radius: 0; /* Esquina inferior izquierda punteaguda */
+}
+
+.img-small {
+    width: 150px; /* Tamaño pequeño */
+    height: 150px; /* Tamaño pequeño */
+    max-width: 100%; /* Ajusta según tu necesidad */
+    max-height: 100%; /* Ajusta según tu necesidad */
+    border-top-left-radius: 0; /* Esquina superior izquierda redonda */
+    border-bottom-right-radius: 0; /* Esquina inferior derecha redonda */
+    border-top-right-radius: 0; /* Esquina superior derecha punteaguda */
+    border-bottom-left-radius: 0; /* Esquina inferior izquierda punteaguda */
+    position: absolute;
+    right: 0;
+    bottom: 50%; /* Ajusta según tu necesidad para posicionarla en la mitad inferior */
+    transform: translate(20%, 160%); /* Ajusta según tu necesidad para centrar verticalmente */
+}
+
+@media (max-width: 1200px) {
+.gren-content {
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 20px;
+}
+
+.green-div {
+max-width: 100%; /* Ajusta según tus necesidades */
+margin: 0 auto;
+}
+
+.image-container {
+padding-top: 30px;
+width: 100%;
+justify-content: center;
+align-items: center;
+position: relative; /* Añadido para posicionar elementos hijos relativos a este contenedor */
+}
+
+.img-small {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(50%, 50%);
+margin-top: 0; /* Ajusta según tus necesidades */
+}
+}
 /*FIN ¿QUÉ HACEMOS?*/
 
 
 /* CARRUSEL CLIENTES */
-body-slider {
-    align-items: center;
+.container-carrusel {
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
+   padding-top: 50px;
+    margin: auto;
+    padding: 50px;
 }
 
-.h1-marcas {
-    text-align: center;
-    padding: 25px;
-    font-size: xx-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.carrusel {
+    flex: 1;
+    max-width: 65%;
+    padding: 20px; /* Ajusta el espacio alrededor del carrusel según sea necesario */
 }
 
-/* Variables */
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 7)); }
+#carouselExampleIndicators {
+    flex: 1;
+    max-width: 30%;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 
+.content-carrusel {
+    color: #2E7D32; /* Color verde oscuro para el texto del carrusel */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.p-carrusel {
+    text-align: justify;
+}
+
+.h2-carrusel {
+    color: #2E7D32; /* Color verde oscuro para los subtítulos del carrusel */
+}
+
+.p-carrusel1 {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .container-carrusel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrusel,
+    #carouselExampleIndicators {
+        max-width: 100%;
+        
+    }
+}
 /* Styling */
 .sliderr {
     height: 100vh;
