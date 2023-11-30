@@ -600,6 +600,78 @@ ul {
     margin: 0 0 1rem 0;
 }
 /*FIN CONTACTO*/
+/*PREGUNTAS FRECUENTES*/
+.sct-article {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding: 50px;
+    
+} 
+
+
+.section-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+.div-article {
+    flex: 1;
+    max-width: 100%;
+}
+
+.faq-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+article {
+    background-color: rgba(0, 128, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+article:hover {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+.title-article {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 16px;
+    
+}
+
+.content-article {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+article:hover .content-article {
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .section-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+/*FIN PREGUNTAS FRECUENTES*/
 
 
 /*FOOTER*/
