@@ -425,7 +425,7 @@ position: relative; /* Añadido para posicionar elementos hijos relativos a este
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(50%, 50%);
+transform: translate(20%, 50%);
 margin-top: 0; /* Ajusta según tus necesidades */
 }
 }
@@ -531,8 +531,7 @@ ul {
     list-style: none;
     padding: 0;
 }
-/*CLIENTES*/
-/*CLIENTES*/
+
 
 /*FORMULARIO*/
 .logo {
@@ -686,6 +685,88 @@ article:hover .content-article {
     
 }
 /*FIN PREGUNTAS FRECUENTES*/
+
+/*SLIDER DE MARCAS*/
+.slider-clientes {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(220px * 14); /* Ajustado para incluir el margen derecho */
+}
+
+.slide-clientes {
+    width: 200px;
+    margin: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-clientes {
+    width: 150px;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-210px * 7)); /* Ajustado para incluir el margen derecho */
+        transform: translateX(calc(-210px * 7)); /* Ajustado para incluir el margen derecho */
+    }
+}
+/*FIN SLIDER DE MARCAS*/
+/*NORMAS ISO*/
+#por-que-elegirnos {
+    background-color: rgba(0, 128, 0, 0.1); /* Verde clarito transparente */
+    padding: 40px;
+}
+
+#por-que-elegirnos h4,
+#por-que-elegirnos h1 {
+    text-align: left;
+}
+
+.razones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.razon {
+    background-color: rgba(0, 128, 0, 0.3); /* Verde más oscuro */
+    padding: 20px;
+    width: 30%; /* Ajusta el ancho según tus necesidades */
+    border-radius: 8px;
+}
+
+.razon h2 {
+    color: white; /* Texto en color blanco para resaltar */
+}
+@media (max-width: 767px) {
+    .razones {
+        flex-direction: column; /* Apilar elementos uno encima del otro en dispositivos móviles */
+    }
+
+    .razon {
+        width: 100%; /* Ocupar todo el ancho en dispositivos móviles */
+        margin-bottom: 20px; /* Añadir espacio entre elementos */
+    }
+
+}
+/*FIN NORMAS ISO*/
 
 
 /*FOOTER*/
