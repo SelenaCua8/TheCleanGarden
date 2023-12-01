@@ -79,4 +79,21 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.classList.add('dark-mode');
   }
 });
+
+//TEXTOS ANIMADOS
+document.addEventListener("DOMContentLoaded", function () {
+  animateSection();
+});
+
+function animateSection() {
+  const section = document.getElementById("animationSection");
+  const content = document.querySelector(".custom-div");
+  const image = document.querySelector(".custom-img-content");
+
+  // Agregar clase para la animación del contenido
+  content.classList.add("fade-in");
+
+  // Agregar clase para la animación de la imagen
+  image.classList.add("slide-right");
+}
  

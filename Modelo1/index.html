@@ -219,7 +219,58 @@
    
     </div>
 </section>
+<style>
+    .custom-section {
+        background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
+        padding: 50px;
+        text-align: left;
+        overflow: hidden; /* Agregado para ocultar parte de la imagen fuera de la sección */
+    }
 
+    .custom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-div {
+        margin-bottom: 20px;
+    }
+
+    .custom-img-content {
+        width: 100%; /* Ajustado para que la imagen sea responsiva */
+        border-radius: 8px;
+        opacity: 0;
+        animation: slide-right 0.4s ease-in-out forwards; /* Utilizamos "forwards" para que se quede en el último fotograma después de la animación */
+    }
+
+    @keyframes slide-right {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+
+<section class="custom-section" id="animationSection">
+<div class="custom-content">
+    <div class="custom-div">
+        <h1>CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h1>
+        <p>Proyectos a medida de espacios verdes. Experiencia en replanteo, movimientos de tierra, forestaciones y más</p>
+        <h1>CONSTRUCCIÓN Y MANTENIMIENTO DE CAMPOS DEPORTIVOS</h1>
+        <p>Construcción y mantenimiento. Nivelación, drenaje, corte, riego y fertilización especializada.</p>
+    </div>
+    <div class="custom-image-container">
+        <img src="./img/hombre-granja-cosiendo-hierba-cortacesped.jpg" alt="" class="custom-img-content">
+    </div>
+</div>
+</section>
 
 
 <!--FIN MAIN-->
