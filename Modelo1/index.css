@@ -11,6 +11,18 @@ body{
     padding: 5px 10%;
 
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333; /* Fondo oscuro en modo oscuro */
+        color: #fff; /* Texto claro en modo oscuro */
+    }
+}
+.dark-mode {
+    /* Estilos adicionales para modo oscuro */
+    /* Por ejemplo, podrías cambiar colores de enlaces, fondos, etc. */
+    background-color: #333;
+    color: #fff;
+}
 /*HEADER*/
 .header {
     display: flex;
@@ -421,6 +433,7 @@ margin-top: 0; /* Ajusta según tus necesidades */
 
 
 /* CARRUSEL CLIENTES */
+/* CARRUSEL CLIENTES */
 .container-carrusel {
     display: flex;
     justify-content: space-between;
@@ -518,6 +531,7 @@ ul {
     list-style: none;
     padding: 0;
 }
+/*CLIENTES*/
 /*CLIENTES*/
 
 /*FORMULARIO*/
@@ -679,7 +693,7 @@ footer {
     display: grid;
     justify-content: end;
     align-content: end;
-    min-height: 100vh;
+   
     background: e8e8e8;
     padding: 50px;
 }
@@ -688,7 +702,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px;
+    
     background: white;
 }
 
