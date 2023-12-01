@@ -221,57 +221,61 @@
 </section>
 <style>
     .custom-section {
-        background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
-        padding: 50px;
-        text-align: left;
-        overflow: hidden; /* Agregado para ocultar parte de la imagen fuera de la sección */
-    }
-
-    .custom-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .custom-div {
-        margin-bottom: 20px;
-    }
-
-    .custom-img-content {
-        width: 100%; /* Ajustado para que la imagen sea responsiva */
-        border-radius: 8px;
-        opacity: 0;
-        animation: slide-right 0.4s ease-in-out forwards; /* Utilizamos "forwards" para que se quede en el último fotograma después de la animación */
-    }
-
-    @keyframes slide-right {
-        0% {
-            transform: translateX(-100%);
+            background-color: rgba(76, 175, 80, 0.1);
+            padding: 50px;
+            text-align: left;
+            overflow: hidden;
             opacity: 0;
+            transform: translateY(20px); /* Desplazado hacia abajo */
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
         }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
+
+        .custom-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
-    }
-</style>
-</head>
-<body>
+
+        .custom-div {
+            margin-bottom: 20px;
+        }
+
+        .custom-img-content {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+
 
 <section class="custom-section" id="animationSection">
-<div class="custom-content">
-    <div class="custom-div">
-        <h1>CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h1>
-        <p>Proyectos a medida de espacios verdes. Experiencia en replanteo, movimientos de tierra, forestaciones y más</p>
-        <h1>CONSTRUCCIÓN Y MANTENIMIENTO DE CAMPOS DEPORTIVOS</h1>
-        <p>Construcción y mantenimiento. Nivelación, drenaje, corte, riego y fertilización especializada.</p>
+    <div class="custom-content">
+        <div class="custom-div">
+            <h1>CONSTRUCCION DE ESPACIOS VERDES, PARQUIZACIONES</h1>
+            <p>Proyectos a medida de espacios verdes. Experiencia en replanteo, movimientos de tierra, forestaciones y más</p>
+            <h1>CONSTRUCCIÓN Y MANTENIMIENTO DE CAMPOS DEPORTIVOS</h1>
+            <p>Construcción y mantenimiento. Nivelación, drenaje, corte, riego y fertilización especializada.</p>
+        </div>
     </div>
-    <div class="custom-image-container">
-        <img src="./img/hombre-granja-cosiendo-hierba-cortacesped.jpg" alt="" class="custom-img-content">
-    </div>
-</div>
 </section>
 
+<script>
+    var section = document.querySelector('.custom-section');
+    var windowHeight = window.innerHeight;
+
+    function checkPosition() {
+        var positionFromTop = section.getBoundingClientRect().top;
+
+        if (positionFromTop - windowHeight <= 0) {
+            section.style.opacity = 1;
+            section.style.transform = 'translateY(0)';
+            window.removeEventListener('scroll', checkPosition); // Desactiva el evento después de la animación inicial
+        }
+    }
+
+    window.addEventListener('scroll', checkPosition);
+
+    checkPosition();
+</script>
 
 <!--FIN MAIN-->
 
