@@ -145,6 +145,9 @@ body{
     overflow: hidden;
     
 }
+.word-responsive{
+    display: none;
+}
 
 .content-wrapper {
     position: absolute;
@@ -1052,6 +1055,35 @@ footer .pie .contact .info-footer li a {
     .contact-header{
         display: none;
     }
+    .arbol{
+        border-radius: 0px;
+    }
+    .word{
+        display: none;
+    }
+    .word-responsive{
+        display: inline;
+        position:absolute;
+    /*top: 50%;
+    left: 50%;*/
+    transform: translate(30%, -90%);
+    
+    color: white;
+    font-size: 2rem;
+    
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    
+    top: 50%;
+    left: 50%;
+  
+    
+    
+    }
+    .contact-button{
+        transform: translateY(15%);
+    }
+    
+
 }
 
 @media (max-width: 768px) {
@@ -1083,6 +1115,9 @@ footer .pie .contact .info-footer li a {
     .contact-button .about-us-button  {
         margin-right: 0; /* Elimina el margen entre los botones */
         margin-bottom: 10px; /* Añade un espacio entre los botones */
+    }
+    .arbol{
+        border-radius: none;
     }
 }
 
