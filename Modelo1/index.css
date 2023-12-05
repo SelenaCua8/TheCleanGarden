@@ -203,16 +203,20 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .aboutus {
     max-width: 50%; /* Ajusta el ancho del contenido de texto según sea necesario */
     text-align: left; /* Alinea el texto a la izquierda */
-    color: #4CAF50; /* Color de texto verde */
+    color: black; /* Color de texto verde */
+    
 }
 
 .aboutus h1, .aboutus h2 {
-    color: #2E7D32; /* Color verde oscuro para los títulos */
+    color: black; /* Color verde oscuro para los títulos */
     font-weight: bold; /* Texto en negrita para los títulos */
 }
 
@@ -1081,6 +1085,22 @@ footer .pie .contact .info-footer li a {
     }
     .contact-button{
         transform: translateY(15%);
+    }
+    .main-2{
+        border-radius: 0px;
+    }
+    .aboutus h4{
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+    }
+    .aboutus h1{
+        font-size: 1.5rem;
+    }
+    .aboutus h2{
+        font-size: 1.3rem;
+    }
+    .img-aboutus{
+        transform: translateX(25%);
     }
     
 
