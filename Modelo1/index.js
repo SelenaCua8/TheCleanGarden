@@ -81,4 +81,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //TEXTOS ANIMADOS
- 
+var section = document.querySelector('.custom-section');
+var windowHeight = window.innerHeight;
+
+function checkPosition() {
+    var positionFromTop = section.getBoundingClientRect().top;
+
+    if (positionFromTop - windowHeight <= 0) {
+        section.style.opacity = 1;
+        section.style.transform = 'translateY(0)';
+        window.removeEventListener('scroll', checkPosition); // Desactiva el evento después de la animación inicial
+    }
+}
+
+window.addEventListener('scroll', checkPosition);
+
+checkPosition();

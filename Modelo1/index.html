@@ -219,32 +219,7 @@
    
     </div>
 </section>
-<style>
-    .custom-section {
-            background-color: rgba(76, 175, 80, 0.1);
-            padding: 50px;
-            text-align: left;
-            overflow: hidden;
-            opacity: 0;
-            transform: translateY(20px); /* Desplazado hacia abajo */
-            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-        }
 
-        .custom-content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .custom-div {
-            margin-bottom: 20px;
-        }
-
-        .custom-img-content {
-            width: 100%;
-            border-radius: 8px;
-        }
-    </style>
 
 
 <section class="custom-section" id="animationSection">
@@ -258,24 +233,7 @@
     </div>
 </section>
 
-<script>
-    var section = document.querySelector('.custom-section');
-    var windowHeight = window.innerHeight;
 
-    function checkPosition() {
-        var positionFromTop = section.getBoundingClientRect().top;
-
-        if (positionFromTop - windowHeight <= 0) {
-            section.style.opacity = 1;
-            section.style.transform = 'translateY(0)';
-            window.removeEventListener('scroll', checkPosition); // Desactiva el evento después de la animación inicial
-        }
-    }
-
-    window.addEventListener('scroll', checkPosition);
-
-    checkPosition();
-</script>
 
 <!--FIN MAIN-->
 
