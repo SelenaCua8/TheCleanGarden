@@ -766,6 +766,33 @@ article:hover .content-article {
     }
 
 }
+.politics {
+    background-color: rgba(76, 175, 80, 0.1); /* Verde claro casi transparente */
+    padding: 50px; /* Espaciado alrededor del contenido */
+    text-align: left;
+}
+
+.politics h1 {
+    color: #2E7D32; /* Color verde oscuro para los títulos */
+    font-weight: bold;
+}
+
+.politics p {
+    color: #4CAF50;
+    line-height: 1.5em; /* Ajuste de la altura de línea para una mejor legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior entre párrafos */
+}
+
+.politics b {
+    color: black; /* Texto negrita en color negro */
+}
+
+/* Ajuste para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .politics {
+        padding: 20px; /* Ajuste de espaciado para dispositivos móviles */
+    }
+}
 /*FIN NORMAS ISO*/
 
 
