@@ -8,14 +8,14 @@ function closeNav(){
     document.getElementById("mobile-menu").style.width = "0%";
 }
 /*FUNCION PARA CAMBIO DE IMAGEN*/ 
-/*window.addEventListener('load', function() {
+window.addEventListener('load', function() {
     console.log('El contenido ha cargado');
 
     var imagenes = [];
-    imagenes[0] = './img/podaDeArboles.jpg';
-    imagenes[1] = '.';
-    imagenes[2] = '../img/TheCleanGardenimg3.jpg';
-    imagenes[3] = '../img/TheCleanGardenimg4.jpg';
+    imagenes[0] = "./img/PlazaBlanffComuna10(7).jpg";
+    imagenes[1] = './img/hombre-granja-cosiendo-hierba-cortacesped.jpg';
+    imagenes[2] = './img/pareja-hablando-mientras-examina-plantas-tableta-digital-huerto.jpg';
+    imagenes[3] = './img/PlazaEjercitoDeLosAndesComuna10(1).jpg';
 
     var indiceImagenes = 0;
     var slider = document.images.slider; // Obtén la referencia al elemento con el nombre "slider"
@@ -31,4 +31,4 @@ function closeNav(){
     }
 
     setInterval(cambiarImagenes, 3000);
-})*/
+})
