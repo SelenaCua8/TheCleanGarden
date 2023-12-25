@@ -1,0 +1,152 @@
+*{
+    margin: 20px;
+    
+}
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 85px;
+   
+   
+}
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    transform: translateX(-80px)
+}
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    transform: translateX(-80px);
+}
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+.header .nav-links {
+    list-style: none;
+    
+}
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+.header .nav-links li:hover,
+.overlay a:hover {
+    transform: scale(1.1);
+
+}
+.header .nav-links a {
+    font-size: 700;
+    color: #015b41;
+}
+.header .nav-links a:hover {
+    color: #015b41;
+    font-weight: bold;
+}
+.menu {
+    display: none;
+}
+.header .btn button,
+.menu button {
+    margin-left: 20px;
+    color: #015b41;
+    background-color: white;
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+.header .btn button:hover,
+.menu button:hover {
+    color: #015b41;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.header a {
+    text-decoration: none;
+}
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: #015b41;
+}
+.header .overlay a:hover,
+.header .overlay a:focus {
+    color: #093025;
+}
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+/*QUERIES*/
+/* UERIES HEADER*/
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2em;
+    }}
+    .header .logo img {
+       
+        transform: translateX(0px);}
+        .header .logo 
+        {
+       
+            transform: translateX(0px);}
+   
+@media screen and (max-height: 450px) {
+  .header .overlay a {
+        font-size: 20px;
+    }
+
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-links,
+    .btn {
+        display: none;
+    }
+
+    .menu {
+        display: inherit;
+    }
+    .btn button{
+        display: none;
+
+    }
+     
+}
+/*FIN QUERIES HEADER*/
