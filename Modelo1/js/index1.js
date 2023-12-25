@@ -8,12 +8,12 @@ function closeNav(){
     document.getElementById("mobile-menu").style.width = "0%";
 }
 /*FUNCION PARA CAMBIO DE IMAGEN*/ 
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
     console.log('El contenido ha cargado');
 
     var imagenes = [];
-    imagenes[0] = '';
-    imagenes[1] = '../img/TheCleanGardenimg2.jpg';
+    imagenes[0] = './img/podaDeArboles.jpg';
+    imagenes[1] = '.';
     imagenes[2] = '../img/TheCleanGardenimg3.jpg';
     imagenes[3] = '../img/TheCleanGardenimg4.jpg';
 
@@ -31,4 +31,4 @@ window.addEventListener('load', function() {
     }
 
     setInterval(cambiarImagenes, 3000);
-})
+})*/
