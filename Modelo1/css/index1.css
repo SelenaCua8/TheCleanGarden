@@ -106,9 +106,75 @@
     right: 45px;
     font-size: 65px;
 }
+/*MAIN IMAGEN GRANDE*/
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+    
+}
+.word-responsive{
+    display: none;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -50%);
+    text-align: left;
+    color: white;
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.contact-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #45a049;
+}
+
+.arbol {
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+}
+.buttons {
+    margin-top: 20px;
+    
+}
+
+.word {
+        font-size: 5rem;
+        display: block;
+        line-height: 1.0;
+        
+    }
+   
+/*FIN MAIN IMAGEN GRANDE*/
+
+
 
 /*QUERIES*/
-/* UERIES HEADER*/
+/* QUERIES HEADER*/
 @media (max-width: 600px) {
    
     .logo {
@@ -134,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     body{
         margin: 0;
     }
@@ -160,6 +226,15 @@
     .btn button{
         display: none;
 
+    }
+    .header .overlay a {
+        font-size: 20px;
+    }
+
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
      
 }
