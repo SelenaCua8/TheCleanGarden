@@ -1,6 +1,6 @@
 *{
-    margin: 20px;
     
+    margin: 0;
 }
 /*HEADER*/
 .header {
@@ -8,6 +8,7 @@
     justify-content:space-between;
     align-items: center;
     height: 85px;
+    margin: 0 40px 0 40px;
    
    
    
@@ -34,6 +35,10 @@
     display: inline-block;
     padding: 0;
     
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
 }
 
 .header .nav-links li:hover,
@@ -115,7 +120,6 @@
     overflow: hidden;
     position: relative;
    
-    
 }
 
 .parallax {
@@ -132,7 +136,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-220%, -50%);
     text-align: left;
     color: white;
     font-size: 4rem;
@@ -187,7 +190,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -80%);
+        transform: translate(-47%, -80%);
         text-align: left;
         color: white;
         font-size: 4rem;
@@ -199,7 +202,7 @@
     .contact-button {
         padding: 10px 20px;
         font-size: 1.5rem;
-        margin-top: 20px;
+        margin-top: 0px;
         background-color: #4CAF50;
         color: white;
         border: none;
@@ -246,8 +249,7 @@
         margin: 0;
     }
     .header{
-        margin: 0;
-        padding: 0;
+        margin: 0 40px 0 40px;
     }
     .logo{
         margin: 0;
@@ -277,6 +279,7 @@
         top: 15px;
         right: 35px;
     }
+    /*FIN QUERIES HEADER*/
     /*MAIN*/
     .word-responsive {
         display: block;
@@ -290,6 +293,7 @@
     .image-container {
         margin: 0;
     }
+    
 
     .content-wrapper {
         position: absolute;
