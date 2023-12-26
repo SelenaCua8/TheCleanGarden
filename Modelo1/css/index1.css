@@ -325,6 +325,46 @@
         margin: 0;
     }
     /*FIN MAIN*/
+    /*SOBRE LA EMPRESA*/
+    .main-1 {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+        gap: 20px; /* Espaciado entre las columnas */
+      }
+      
+      .main-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .aboutus {
+        max-width: 600px; /* Limita el ancho del área de texto */
+      }
+      
+      h2 {
+        color: #333; /* Color del texto para los títulos */
+      }
+      
+      p {
+        white-space: pre-line;
+        line-height: 1.8; /* Altura de línea para una mejor legibilidad */
+        color: #555; /* Color del texto para los párrafos */
+      }
+      
+      .img-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en el contenedor de imágenes */
+        gap: 10px; /* Espaciado entre las imágenes */
+      }
+      
+      .img-aboutus {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; /* Agrega bordes redondeados a la imagen */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+      }
      
 }
 /*FIN QUERIES*/

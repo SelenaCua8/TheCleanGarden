@@ -51,45 +51,76 @@
         </div>
     </div>
 </section>
-<!--<section class="main-1">
-  <div class="main-2">
-      <div class="aboutus">
-          
-          <h2>SOBRE LA EMPRESA</h2>
-          
-          <p>Somos una empresa con más de 20 años de experiencia orientada a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares.</p>
-          <h2>Desarrollo y mantenimiento de espacios verdes</h2>
-          <p>Los espacios verdes constituyen uno de los principales articuladores de la vida social. Son lugares de encuentro, de integración, promueven la diversidad cultural generan valor simbólico, identidad y pertenencia. Asimismo, contribuyen en la regulación hídrica y en la reducción del impacto de la ciudad o industria construida sobre el medio ambiente. Y ofrecen un ecosistema apropiado para la conservación de biodiversidad. <br><br>
-          Los espacios verdes requieren un mantenimiento que varía de acuerdo a sus funciones, modalidad, para lo cual deben contar con un adecuado programa que les permita conservarlos en su mejor forma a lo largo de todo el año.
-          Brindamos servicios de mantenimiento a todo tipo de espacios verdes, públicos o privados, adecuando el programa a los requerimientos y necesidades de cada uno de ellos.</p>
-      </div>
-     <!-- <div class="img-container">
-          <img src="./img/Nosotros.jpg" alt="" class="img-aboutus">
-          
-      </div>-->
-  </div>
-  </section>
-  <style>
-    .main-1{
-      margin: 10px;
-      transform: translateY(-130%);
-    }
-    /*ASI PARA QUERIE*/
-    h2{
-      text-align: center;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-    p{
-      margin-top: 20px;
-      text-align: center;
-    }
 
-    h2, p{
-      text-align: left;
-      margin-left: 0;
-    }
-  </style>
+<section class="main-1">
+  <div class="main-2">
+    <div class="aboutus">
+      <h2 class="title">SOBRE LA EMPRESA</h2>
+      <p class="text">Somos una empresa con más de 20 años de experiencia orientada a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares.</p>
+      <h2 class="title">Desarrollo y mantenimiento de espacios verdes</h2>
+      <p class="text">Los espacios verdes constituyen uno de los principales articuladores de la vida social. Son lugares de encuentro, de integración, promueven la diversidad cultural generan valor simbólico, identidad y pertenencia. Asimismo, contribuyen en la regulación hídrica y en la reducción del impacto de la ciudad o industria construida sobre el medio ambiente. Y ofrecen un ecosistema apropiado para la conservación de biodiversidad. <br><br>
+        Los espacios verdes requieren un mantenimiento que varía de acuerdo a sus funciones, modalidad, para lo cual deben contar con un adecuado programa que les permita conservarlos en su mejor forma a lo largo de todo el año.
+        Brindamos servicios de mantenimiento a todo tipo de espacios verdes, públicos o privados, adecuando el programa a los requerimientos y necesidades de cada uno de ellos.</p>
+    </div>
+  </div>
+  <div class="img-container">
+    <img src="./img/PlazaBlanffComuna10(5).jpg" alt="" class="img-aboutus">
+    <img src="./img/PlazaBlanffComuna10(2).jpg" alt="" class="img-aboutus">
+    <img src="./img/PlazaBlanffComuna10(6).jpg" alt="" class="img-aboutus">
+    <img src="./img/PlazaBlanffComuna10(7).jpg" alt="" class="img-aboutus">
+  </div>
+</section>
+<style>
+  body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  /* Estilo general */
+  .main-1 {
+   padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+    gap: 20px; /* Espaciado entre las columnas */
+    background: linear-gradient(to right, #ffffff 10%, #1d721d 90%);
+    transform: translateY(-31%);
+  }
+
+  .main-2 {
+    max-width: 100%; /* Limita el ancho del área de texto */
+    white-space: pre-line;
+    margin-top: 50px;
+  }
+
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title, .text {
+    color: #333; /* Color del texto para títulos y párrafos */
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* Dos columnas en el contenedor de imágenes */
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .img-aboutus {
+    width: 100%; /* Establece el ancho al 100% */
+    aspect-ratio: 1 / 1; /* Establece la relación de aspecto para que la imagen sea cuadrada */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre completamente el contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados a la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+  }
+</style>
+
+  
 
 
 
