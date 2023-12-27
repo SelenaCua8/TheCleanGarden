@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .tomografia-section {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 0.8s, transform 0.8s;
+    }
+
+    .tomografia-section.animate {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .tomografia-section h1,
+    .tomografia-section p,
+    .tomografia-section img {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tomografia-section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<section class="tomografia-section" id="tomografia-section">
+  <div>
+    <div>
+      <h1>Tomografía de árboles</h1>
+      <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico...</p>
+    </div>
+
+    <div>
+      <h1>Función y características del tomógrafo sónico</h1>
+      <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos...</p>
+    </div>
+
+    <div>
+      <img src="./img/PlazaRaviggnianiComuna11(1).jpg" alt="">
+      <img src="./img/PlazaRaviggnianiComuna11(2).jpg" alt="">
+      <img src="./img/PlazaRaviggnianiComuna11(3).jpg" alt="">
+      <img src="./img/PlazaRaviggnianiComuna11(4).jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tomografiaSection = document.getElementById('tomografia-section');
+
+    function handleScroll() {
+      var bounding = tomografiaSection.getBoundingClientRect();
+      if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+        tomografiaSection.classList.add('animate');
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  });
+</script>
+
+</body>
+</html>
+

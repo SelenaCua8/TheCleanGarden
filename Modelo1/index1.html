@@ -117,65 +117,75 @@
     </div>
     
 </section>
+
 <style>
-.main2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  margin: 30px;
-}
-
-.tomografia, .tomografia1 {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.tomografia-section {
   opacity: 0;
-  transition: opacity 5s, transform 5s;
+  transform: translateX(-100%);
+  transition: opacity 0.8s, transform 0.8s;
 }
 
-.animate-in {
+.tomografia-section.animate {
   opacity: 1;
   transform: translateX(0);
 }
 
-h1, p {
-  margin-bottom: 15px;
+.tomografia-section h1,
+.tomografia-section p,
+.tomografia-section div,
+.tomografia-section img {
+  margin: 0;
+  padding: 0;
+}
+
+.tomografia-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
 }
 </style>
+</head>
+<body>
 
-
-<section class="main2">
-<div class="tomografia">
-<h1>Tomografía de árboles</h1>
-<p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar, ya que por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo se informará que será necesaria su extracción.</p>
+<section class="tomografia-section" id="tomografia-section">
+<div>
+<div>
+  <h1>Tomografía de árboles</h1>
+  <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar, ya que por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo se informará que será necesaria su extracción.</p>
 </div>
 
-<div class="tomografia1">
-<h1>Función y características del tomógrafo sónico</h1>
-<p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br>
-El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos.</p>
+<div>
+  <h1>Función y características del tomógrafo sónico</h1>
+  <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br>
+  El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos.</p>
+</div>
+
+<div>
+  <div>
+    <img src="./img/PlazaRaviggnianiComuna11(1).jpg" alt="">
+    <img src="./img/PlazaRaviggnianiComuna11(2).jpg" alt="">
+    <img src="./img/PlazaRaviggnianiComuna11(3).jpg" alt="">
+    <img src="./img/PlazaRaviggnianiComuna11(4).jpg" alt="">
+  </div>
+</div>
 </div>
 </section>
 
 <script>
-// Función para agregar la clase de animación
-function addAnimationClass() {
-const elementsToAnimate = document.querySelectorAll('.tomografia, .tomografia1');
+document.addEventListener('DOMContentLoaded', function () {
+var tomografiaSection = document.getElementById('tomografia-section');
 
-elementsToAnimate.forEach(element => {
-  const elementPosition = element.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (elementPosition < screenHeight) {
-    element.classList.add('animate-in');
+function handleScroll() {
+  var bounding = tomografiaSection.getBoundingClientRect();
+  if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+    tomografiaSection.classList.add('animate');
+    window.removeEventListener('scroll', handleScroll);
   }
-});
 }
 
-// Llamar a la función al cargar y hacer scroll
-window.addEventListener('load', addAnimationClass);
-window.addEventListener('scroll', addAnimationClass);
+window.addEventListener('scroll', handleScroll);
+});
 </script>
 
 
