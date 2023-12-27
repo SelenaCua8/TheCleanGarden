@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ===== Link Swiper's CSS ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- ===== Fontawesome CDN Link ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+ 
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/index1.css">
+ 
+
   <title>Document</title>
 </head>
 <body>
@@ -12,9 +21,8 @@
 <header class="header">
   <div class="logo">
 <!---->            <img src="./img/theCleanGarden.jpg" alt="Logo de la marca">
-  </div>
-  <a id="darkmode" href="javascript:void(0)">Modo Oscuro</a>
-  <nav>
+</div>
+ 
      <ul class="nav-links">
           <li><a href="#">NOSOTROS</a></li>
           <li><a href="#">SERVICIOS</a></li>
@@ -60,7 +68,7 @@
     </div>
     <section class="about">
       <div class="about-image">
-        <img src="./img/PlazaEjercitoDeLosAndesComuna10(5).jpg" alt="">
+        <img src="./img/PlazaEjercitoDeLosAndesComuna10(4).jpg" alt="">
       </div>
       <div class="about-content">
         <h2>Desarrollo y mantenimiento de espacios verdes.</h2>
@@ -74,6 +82,117 @@
   </div>
 </section>
 
+<section class="main1">
+  <div class="column">
+    <div class="column-left">
+      <h1>Construcción de espacios verdes, parquizaciones.</h1>
+      <p>Ejecutamos tareas de construcción de espacios verdes de toda índole, cualquiera sea su escala. <br>
+      Contamos con gran experiencia en el área presentando propuestas a medida de cada cliente. <br> <br>
+      Ejemplo de tareas que se realizan en este tipo de obras: <br>
+      Replanteos de obra, movimientos de tierra y nivelaciones, plantaciones forestaciones, trasplantes de ejemplares, implantación de césped, formación de canteros, construcción de caminos, senderos y mobiliario, instalación de sistemas de riego, etc.</p>
+      </div>
+      
+      <div class="column-right">
+      <h1>Construcción y mantenimiento de campos deportivos.</h1>
+      <p>Construcción y mantenimiento de campos deportivos. En virtud de ello efectuamos las tareas iniciales de nivelación, desmonte, terrapleando, construcción de drenes, conformación de estratos, drenaje y portante e implementación de césped, para luego pasar a las tareas clásicas de mantenimiento tales como corte, riego, fertilización, aireación y descompactado de la capa portante, corte vertical y eliminación de thatch, top-dressing, resiembra, etc.</p>
+      </div>
+  </div>
+
+  
+    <div class="collage" style="display: flex; flex-direction: column;">
+      <!--<div><img src="./img/PlazaEjercitoDeLosAndesComuna10(6).jpg" alt="" class="collage"></div>
+      <div><img src="./img/PlazaEjercitoDeLosAndesComuna10(1).jpg" alt="" class="collage"></div>
+      <div><img src="./img/PlazaEjercitoDeLosAndesComuna10(2).jpg" alt="" class="collage"></div>
+      <div><img src="./img/PlazaEjercitoDeLosAndesComuna10(4).jpg" alt="" class="collage"></div>
+      <!-- Agrega más imágenes según sea necesario -->
+      
+      <!-- Contenedor del slider -->
+  <div class="slider-container">
+    <div class="slides">
+      <div class="slide"><img src="./img/PlazaEjercitoDeLosAndesComuna10(6).jpg" class="collage" alt=""></div>
+      <div class="slide"><img src="./img/PlazaEjercitoDeLosAndesComuna10(1).jpg" class="collage" alt=""></div>
+      <div class="slide"><img src="./img/PlazaEjercitoDeLosAndesComuna10(2).jpg" class="collage" alt=""></div>
+      <!-- Agrega más imágenes según sea necesario -->
+    </div>
+    
+    <!-- Botones de control del slider -->
+    <div class="slider-control prev" onclick="prevSlide()">&#10094;</div>
+    <div class="slider-control next" onclick="nextSlide()">&#10095;</div>
+  </div>
+    </div>
+    </div>
+    
+   
+  
+</section>
+
+
+<style>
+  .main1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Dos columnas */
+      grid-gap: 20px; /* Espacio entre columnas */
+      margin: 0px;
+      background-color: #f2f2f2; /* Color de fondo verde claro con transparencia */
+      padding: 80px; /* Margen interno de 30px */
+    }
+
+    .column-left, .column-right {
+      margin-bottom: 30px; /* Espacio entre títulos y párrafos */
+    }
+
+    h1 {
+      margin-bottom: 30px; /* Espaciado adicional para los títulos */
+    }
+
+    p {
+      line-height: 1.5; /* Interlineado del 150% para los párrafos */
+    }
+
+    .collage {
+      width: 80%; /* Ancho del 80% */
+      display: block;
+      margin: 0 auto; /* Centrar las imágenes */
+    }
+
+    /* Estilos para el slider */
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 600px; /* Ajusta el ancho máximo del slider */
+      margin: 0 auto;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Botones de navegación del slider */
+    .slider-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
+
+
 
 
   
@@ -83,6 +202,15 @@
 
 <!--FIN IMAGEN GRANDE-->
 </main>
+
 <script src="./js/index1.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 </html>

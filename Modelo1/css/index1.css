@@ -4,14 +4,7 @@
 }
 
 /*MODO OSCURO*/
-#darkmode{
-    display: inline-block;
-    background: url(icons/dark-mode.webp) left center;
-    width: 99px;
-    height: 40px;
-    font-size: 0;
-    text-decoration: none;
-}
+
 /*FIN MODO OSCURO*/
 /*HEADER*/
 .header {
