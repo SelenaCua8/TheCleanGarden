@@ -117,77 +117,83 @@
     </div>
     
 </section>
-
 <style>
-.tomografia-section {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.8s, transform 0.8s;
+
+  .tomografia-section {
+  overflow: hidden;
+  padding: 50px;
+  background-color: rgba(176, 242, 178, 0.5); /* Fondo verde más transparente */
+  box-shadow: 0 0 10px rgba(47, 47, 47, 0.1); /* Sombra suave */
+  text-align: center;
 }
 
-.tomografia-section.animate {
-  opacity: 1;
-  transform: translateX(0);
-}
+    .tomografia-section div {
+      opacity: 0;
+      transform: translateX(50px); /* Cambiado para un efecto de entrada desde abajo */
+      transition: opacity 5s ease, transform 5s ease;
+      padding: 20px; /* Espaciado interno */
+    }
 
-.tomografia-section h1,
-.tomografia-section p,
-.tomografia-section div,
-.tomografia-section img {
-  margin: 0;
-  padding: 0;
-}
+    .tomografia-section.active div {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-.tomografia-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+    .tomografia-section h1, p {
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .img-tomografias {
+      width: 400px; /* Reducido el ancho de las imágenes */
+      height: 400px; /* Reducido el alto de las imágenes */
+      object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
+      border-radius: 8px; /* Bordes redondeados para las imágenes */
+    }
+   
+@media screen and (max-width: 1000px){
+  .img-tomografias {
+      width: 200px; /* Reducido el ancho de las imágenes */
+      height: 200px; /* Reducido el alto de las imágenes */
+      object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
+      border-radius: 8px; /* Bordes redondeados para las imágenes */
+    }
 }
+    
 </style>
-</head>
-<body>
 
 <section class="tomografia-section" id="tomografia-section">
-<div>
-<div>
+<div class="animate__animated animate__fadeInLeft">
+<div class="animate__animated animate__fadeIn">
   <h1>Tomografía de árboles</h1>
-  <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar, ya que por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo se informará que será necesaria su extracción.</p>
+  <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar que tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar, ya que por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo se informara que será necesaria tu extracción.</p>
 </div>
 
-<div>
+<div class="animate__animated animate__fadeIn">
   <h1>Función y características del tomógrafo sónico</h1>
-  <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br>
-  El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos.</p>
+  <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br> El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, el marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos. <br> <br>
+  
+  En las imágenes superiores se observan distintos grados de daño, siendo el caso de la izquierda un árbol sin daño interno de la madera. El caso de la derecha se trata de un ahuecamiento interno severo y el caso del centro es el caso de un árbol con daño leve moderado. Este estudio es de suma utilidad para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles. <br>
+El estudio se completa con la observación visual de indicadores de peligrosidad, como ramas secas, ahuecamientos en ramas primarias, grietas, abultamientos, raíces estrangulantes, etc. y parámetros dasométricos del árbol evaluado. El estudio es realizado por un técnico especialiste en arbolado urbano. <br> Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendaciones de Manejo.</p>
 </div>
 
-<div>
+<div class="animate__animated animate__fadeIn">
   <div>
-    <img src="./img/PlazaRaviggnianiComuna11(1).jpg" alt="">
-    <img src="./img/PlazaRaviggnianiComuna11(2).jpg" alt="">
-    <img src="./img/PlazaRaviggnianiComuna11(3).jpg" alt="">
-    <img src="./img/PlazaRaviggnianiComuna11(4).jpg" alt="">
+    <img src="./img/tomografiaarbol.jpg" alt="" class="img-tomografias">
+    <img src="./img/tomografiaarbol1.jpeg" alt="" class="img-tomografias">
+    <img src="./img/tomografiaarbol1.jpeg" alt="" class="img-tomografias">
+    <img src="./img/tomografiaarbol3.jpg" alt="" class="img-tomografias">
   </div>
 </div>
 </div>
 </section>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-var tomografiaSection = document.getElementById('tomografia-section');
-
-function handleScroll() {
-  var bounding = tomografiaSection.getBoundingClientRect();
-  if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
-    tomografiaSection.classList.add('animate');
-    window.removeEventListener('scroll', handleScroll);
-  }
-}
-
-window.addEventListener('scroll', handleScroll);
+// Agrega la clase "active" para activar la animación al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("tomografia-section").classList.add("active");
 });
 </script>
-
 
 
 
