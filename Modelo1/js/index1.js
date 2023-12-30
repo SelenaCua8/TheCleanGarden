@@ -55,3 +55,10 @@ let currentSlide = 0;
         showSlide(currentSlide + 1);
       }
     } 
+
+    /*TOMOGRAFIA DE ARBOLES*/
+    // Agrega la clase "active" para activar la animación al cargar la página
+    document.addEventListener("DOMContentLoaded", function() {
+    
+      document.getElementById("tomografia-section").classList.add("active");
+    });
