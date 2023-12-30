@@ -118,6 +118,190 @@
     
 </section>
 <style>
+.tomografia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+  margin: 80px;
+  
+
+}
+
+.p-tomografia {
+ 
+  color: #333;
+  white-space: pre-line;
+  margin-left: 30px;
+  text-align: center;
+}
+.h1-tomografia{
+ 
+  color: #333;
+  white-space: pre-line;
+  margin-left: 30px;
+  text-align: center;
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  perspective: 800px;
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.card .front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.card .back {
+  background: #8feb95;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.characteristics {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.characteristics p {
+  color: #333;
+  line-height: 1.6; /* Aumenté el interlineado */
+  font-size: 16px; /* Aumenté el tamaño de la letra */
+  margin: 0; /* Eliminé el margen para que empiece y termine igual */
+}
+
+
+.characteristics ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.characteristics ul li {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+</style>
+</head>
+
+<body>
+<section class="tomografia">
+<h1 class="h1-tomografia">Tomografía de árboles</h1>
+<p style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;" class="p-tomografia">Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar. Por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo, se informará que será necesaria tu extracción.</p>
+
+<div class="card-container">
+  <div class="card">
+      <div class="content">
+          <div class="front">
+              <img src="./img/tomografiaarbol.jpg" alt="">
+
+          </div>
+          <div class="back">
+              <h3>CASO 1</h3>
+              <p>Este es un caso sin daño interno de la madera</p>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="content">
+          <div class="front">
+              <img src="./img/tomografiaarbol1.jpeg" alt="">
+
+          </div>
+          <div class="back">
+              <h3>CASO 2</h3>
+              <p>Árbol con daño leve moderado</p>
+
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="content">
+          <div class="front">
+              <img src="./img/tomografiaarbol3.jpg" alt="">
+
+          </div>
+          <div class="back">
+              <h3>CASO 3</h3>
+              <p>Se trata de un ahuecamiento interno severo</p>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="characteristics">
+
+  <p style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;" class="p-tomografia">El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br> El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, el marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos. <br> <br>
+      En las imágenes superiores se observan distintos grados de daño, siendo el caso de la izquierda un árbol sin daño interno de la madera. El caso de la derecha se trata de un ahuecamiento interno severo y el caso del centro es el caso de un árbol con daño leve moderado. Este estudio es de suma utilidad para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles. <br>
+      El estudio se completa con la observación visual de indicadores de peligrosidad, como ramas secas, ahuecamientos en ramas primarias, grietas, abultamientos, raíces estrangulantes, etc. y parámetros dasométricos del árbol evaluado. El estudio es realizado por un técnico especialista en arbolado urbano. <br> Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendaciones de Manejo.
+  </p>
+
+  <h1 style="margin-top: 50px; margin-bottom: 0px;">Características</h1>
+  <ul style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;">
+      <li>Analiza y cuantifica el estado interno de la madera.</li>
+      <li>Determina el grado de peligrosidad del arbolado.</li>
+      <li>Entrega una imagen de la sección del tronco con indicaciones de colores.</li>
+      <li>Colores indicativos: negros y marrones oscuros (madera en perfecto estado), marrón claro (madera ligeramente alterada), <br> verdes (estados medios de putrefacción),  violetas (madera muy alterada), celestes y blancos (ahuecamientos).</li>
+      <li>Útil para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles.</li>
+  </ul>
+</div>
+</section>
+
+<style>
    .poda {
             display: flex;
             flex-wrap: wrap;

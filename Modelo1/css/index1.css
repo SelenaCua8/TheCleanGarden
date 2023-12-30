@@ -390,46 +390,8 @@
 
 
 /*TOMOGRAFIA DE ARBOLES*/
-.tomografia-section {
-  overflow: hidden;
-  padding: 50px;
-  background-color: rgba(176, 242, 178, 0.5); /* Fondo verde más transparente */
-  box-shadow: 0 0 10px rgba(47, 47, 47, 0.1); /* Sombra suave */
-  text-align: center;
-}
 
-    .tomografia-section div {
-      opacity: 0;
-      transform: translateX(-50px); /* Cambiado para un efecto de entrada desde abajo */
-      transition: opacity 5s ease, transform 5s ease;
-      padding: 20px; /* Espaciado interno */
-    }
 
-    .tomografia-section.active div {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .tomografia-section h1, p {
-      margin-bottom: 20px;
-      white-space: pre-line;
-    }
-
-    .img-tomografias {
-      width: 400px; /* Reducido el ancho de las imágenes */
-      height: 400px; /* Reducido el alto de las imágenes */
-      object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
-      border-radius: 8px; /* Bordes redondeados para las imágenes */
-    }
-   
-@media screen and (max-width: 1000px){
-  .img-tomografias {
-      width: 200px; /* Reducido el ancho de las imágenes */
-      height: 200px; /* Reducido el alto de las imágenes */
-      object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
-      border-radius: 8px; /* Bordes redondeados para las imágenes */
-    }
-}
 /*FIN TOMOGRAFIA DE ARBOLES*/
  
 /*FIN MAIN1*/
