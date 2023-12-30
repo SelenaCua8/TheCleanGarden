@@ -400,7 +400,7 @@
 
     .tomografia-section div {
       opacity: 0;
-      transform: translateX(50px); /* Cambiado para un efecto de entrada desde abajo */
+      transform: translateX(-50px); /* Cambiado para un efecto de entrada desde abajo */
       transition: opacity 5s ease, transform 5s ease;
       padding: 20px; /* Espaciado interno */
     }

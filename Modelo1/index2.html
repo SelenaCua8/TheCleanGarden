@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomografía de Árboles</title>
-   
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
 
+    <style>
         body {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-color:white;
-            margin: 0;
+            background-color: white;
+            margin: 80px;
+            
+
         }
 
-        h1, p {
+        h1,
+        p {
             text-align: center;
             color: #333;
+            white-space: pre-line;
         }
 
         .card-container {
@@ -50,7 +48,7 @@
         .card .content {
             width: 100%;
             height: 100%;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             transform-style: preserve-3d;
             transition: transform 0.5s;
         }
@@ -76,17 +74,20 @@
             width: 100%;
             height: 100%;
             border-radius: 15px 15px 0 0;
+            object-fit: cover;
         }
 
         .card .back {
-            background: #03446A;
+            background: #8feb95;
             color: white;
             transform: rotateY(180deg);
             padding: 20px;
+            text-align: center;
         }
 
-        h3, p {
-            margin: 10px 0;
+        h3,
+        p {
+            margin-left: 30px;
             text-align: center;
         }
 
@@ -95,40 +96,44 @@
             margin-top: 20px;
         }
 
-        .characteristics h1 {
-            font-size: 24px;
-            color: #03446A;
-        }
-
+       
         .characteristics p {
             color: #333;
-            line-height: 1.5;
+            line-height: 1.6; /* Aumenté el interlineado */
+            font-size: 16px; /* Aumenté el tamaño de la letra */
+            margin: 0; /* Eliminé el margen para que empiece y termine igual */
         }
 
+
         .characteristics ul {
-            list-style-type: square;
-            padding-left: 20px;
-            color: #333;
+            list-style: none;
+            padding-left: 0;
+            text-align: center;
+            white-space: pre-line;
+        }
+
+        .characteristics ul li {
+            margin-bottom: 10px;
+            display: inline-block;
         }
     </style>
 </head>
+
 <body>
     <h1>Tomografía de árboles</h1>
-    <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar. Por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo, se informará que será necesaria tu extracción.</p>
+    <p style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;">Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar qué tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar. Por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo, se informará que será necesaria tu extracción.</p>
 
     <div class="card-container">
         <div class="card">
             <div class="content">
                 <div class="front">
                     <img src="./img/tomografiaarbol.jpg" alt="">
-                    <h3>Japan</h3>
+
                 </div>
                 <div class="back">
-                    <h3>Japan</h3>
+                    <h3>CASO 1</h3>
                     <p>Este es un caso sin daño interno de la madera</p>
-                    <div class="link">
-                        <a href="#">Detalles</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -137,14 +142,12 @@
             <div class="content">
                 <div class="front">
                     <img src="./img/tomografiaarbol1.jpeg" alt="">
-                    <h3>Spain</h3>
+
                 </div>
                 <div class="back">
-                    <h3>Spain</h3>
+                    <h3>CASO 2</h3>
                     <p>Árbol con daño leve moderado</p>
-                    <div class="link">
-                        <a href="#">Detalles</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -153,33 +156,33 @@
             <div class="content">
                 <div class="front">
                     <img src="./img/tomografiaarbol3.jpg" alt="">
-                    <h3>Perú</h3>
+
                 </div>
                 <div class="back">
-                    <h3>Perú</h3>
+                    <h3>CASO 3</h3>
                     <p>Se trata de un ahuecamiento interno severo</p>
-                    <div class="link">
-                        <a href="#">Detalles</a>
-                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <div class="characteristics">
-        <h1>Función y características del tomógrafo sónico</h1>
-        <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br> El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, el marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos. <br> <br>
-        En las imágenes superiores se observan distintos grados de daño, siendo el caso de la izquierda un árbol sin daño interno de la madera. El caso de la derecha se trata de un ahuecamiento interno severo y el caso del centro es el caso de un árbol con daño leve moderado. Este estudio es de suma utilidad para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles. <br>
-        El estudio se completa con la observación visual de indicadores de peligrosidad, como ramas secas, ahuecamientos en ramas primarias, grietas, abultamientos, raíces estrangulantes, etc. y parámetros dasométricos del árbol evaluado. El estudio es realizado por un técnico especialista en arbolado urbano. <br> Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendaciones de Manejo.</p>
+
+        <p style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;">El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br> El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, el marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos. <br> <br>
+            En las imágenes superiores se observan distintos grados de daño, siendo el caso de la izquierda un árbol sin daño interno de la madera. El caso de la derecha se trata de un ahuecamiento interno severo y el caso del centro es el caso de un árbol con daño leve moderado. Este estudio es de suma utilidad para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles. <br>
+            El estudio se completa con la observación visual de indicadores de peligrosidad, como ramas secas, ahuecamientos en ramas primarias, grietas, abultamientos, raíces estrangulantes, etc. y parámetros dasométricos del árbol evaluado. El estudio es realizado por un técnico especialista en arbolado urbano. <br> Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendaciones de Manejo.
+        </p>
 
         <h1>Características</h1>
-        <ul>
+        <ul style="white-space: pre-line; font-size: 18px; line-height: 1.4; margin: 0 150px;">
             <li>Analiza y cuantifica el estado interno de la madera.</li>
             <li>Determina el grado de peligrosidad del arbolado.</li>
             <li>Entrega una imagen de la sección del tronco con indicaciones de colores.</li>
-            <li>Colores indicativos: negros y marrones oscuros (madera en perfecto estado), marrón claro (madera ligeramente alterada), verdes (estados medios de putrefacción), violetas (madera muy alterada), celestes y blancos (ahuecamientos).</li>
+            <li>Colores indicativos: negros y marrones oscuros (madera en perfecto estado), marrón claro (madera ligeramente alterada), <br> verdes (estados medios de putrefacción),  violetas (madera muy alterada), celestes y blancos (ahuecamientos).</li>
             <li>Útil para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles.</li>
         </ul>
     </div>
 </body>
+
 </html>

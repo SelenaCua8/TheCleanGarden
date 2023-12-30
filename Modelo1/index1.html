@@ -76,7 +76,7 @@
           Asimismo, contribuyen en la regulación hídrica y en la reducción del impacto de la ciudad o industria construida sobre el medio ambiente. Y ofrecen un ecosistema apropiado para la conservación de la biodiversidad. <br>
         Desde su forma urbana también juegan un rol importante en la estructuración de la ciudad como ordenadores de la trama, cualificando el tejido, orientando el crecimiento y vinculando espacios. <br> Por estos motivos es tan importante la gestión de su mantenimiento. <br> <br>
       </p>
-        <a href="" class="read-more">Ver más</a>
+        <!--<a href="" class="read-more">Ver más</a>-->
       </div>
     </section>
   </div>
@@ -117,32 +117,111 @@
     </div>
     
 </section>
+<style>
+   .poda {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: red;
+            margin: 0;
+        }
 
-<section class="tomografia-section" id="tomografia-section">
-<div class="animate__animated animate__fadeInLeft">
-<div class="animate__animated animate__fadeIn">
-  <h1>Tomografía de árboles</h1>
-  <p>Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico. Esta herramienta es una ayuda para detectar que tipo de tratamiento es necesario para cada caso, prevaleciendo siempre la vida del ejemplar, ya que por medio de los resultados del estudio se puede realizar una reducción de copa, un balanceo, y en última instancia, dado el riesgo se informara que será necesaria tu extracción.</p>
-</div>
+        .tomografia-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinea los elementos en la parte superior */
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-<div class="animate__animated animate__fadeIn">
-  <h1>Función y características del tomógrafo sónico</h1>
-  <p>El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos y así determinar el grado de peligrosidad del arbolado. <br> El Tomógrafo sónico entrega una imagen de la sección del tronco a la altura a la que se realiza el estudio, que indica mediante colores el estado de la madera. Los colores negros y marrones oscuros indican madera en perfecto estado, el marrón claro indica madera ligeramente alterada, los verdes estados medios de putrefacción, los violetas madera muy alterada y los celestes y blancos, ahuecamientos. <br> <br>
+        .tomografia-section .left-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .tomografia-section .right-content {
+            flex: 1;
+        }
+
+        .img-tomografias {
+            width: 100%; /* Ajusta el ancho según el contenedor */
+            height: 200px; /* Establece la altura fija */
+            object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+            margin-bottom: 10px;
+        }
+
+        .animate__animated {
+            /* Tus estilos de animación aquí */
+        }
+
+        /*MAIN1*/
+        .main1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas */
+            grid-gap: 20px; /* Espacio entre columnas */
+            margin: 0px;
+            background-color: #f2f2f2; /* Color de fondo verde claro con transparencia */
+            padding: 80px; /* Margen interno de 30px */
+        }
+
+        .column-left,
+        .column-right {
+            margin-bottom: 30px; /* Espacio entre títulos y párrafos */
+        }
+
+        h1 {
+            margin-bottom: 30px; /* Espaciado adicional para los títulos */
+        }
+
+        p {
+            line-height: 1.5; /* Interlineado del 150% para los párrafos */
+        }
+
+        .collage {
+            width: 80%; /* Ancho del 80% */
+            display: block;
+            margin: 0 auto; /* Centrar las imágenes */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="poda">
+        <section class="tomografia-section" id="tomografia-section">
+            <div class="left-content animate__animated animate__fadeInLeft">
+                <h1>Poda, transplante y extracciones ejemplares</h1>
+                <p>Las tareas de conservación de ejemplares arbóreos requieren un conocimiento de las especies y de sus
+                    características naturales. <br> Antes de intervenir un individuo es necesario una evaluación
+                    profesional y un diagnóstico que desarrolle desde el conocimiento un tratamiento eficiente
+                    preservando la sanidad de los mismos. En la ciudad el árbol se ve altamente exigido en su
+                    interrelación con el espacio construído requeriendo en muchos casos podas, transplantes y
+                    fertilizaciones. <br> Cuando un ejemplar debe ser removido es de real importancia las normas de
+                    seguridad con las que se opere. <br> La empresa cuenta con el conocimiento, técnica y recursos
+                    necesarios para intervenir en el arbolado en forma eficiente preservando la estética y sanidad del
+                    mismo.
+                </p>
+            </div>
+
+            <div class="right-content animate__animated animate__fadeIn">
+                <div>
+                    <img src="./poda.jpg" alt="" class="img-tomografias">
+                    <img src="./podaDeArboles.jpg" alt="" class="img-tomografias">
+                    <img src="./poda.jpg" alt="" class="img-tomografias">
+                    <img src="./podaDeArboles.jpg" alt="" class="img-tomografias">
+                </div>
+            </div>
+        </section>
+    </section>
+
+   
+
+
   
-  En las imágenes superiores se observan distintos grados de daño, siendo el caso de la izquierda un árbol sin daño interno de la madera. El caso de la derecha se trata de un ahuecamiento interno severo y el caso del centro es el caso de un árbol con daño leve moderado. Este estudio es de suma utilidad para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles. <br>
-El estudio se completa con la observación visual de indicadores de peligrosidad, como ramas secas, ahuecamientos en ramas primarias, grietas, abultamientos, raíces estrangulantes, etc. y parámetros dasométricos del árbol evaluado. El estudio es realizado por un técnico especialiste en arbolado urbano. <br> Se entrega un informe por árbol evaluado con el Diagnóstico y las Recomendaciones de Manejo.</p>
-</div>
 
-<div class="animate__animated animate__fadeIn">
-  <div>
-    <img src="./img/tomografiaarbol.jpg" alt="" class="img-tomografias">
-    <img src="./img/tomografiaarbol1.jpeg" alt="" class="img-tomografias">
-    <img src="./img/tomografiaarbol1.jpeg" alt="" class="img-tomografias">
-    <img src="./img/tomografiaarbol3.jpg" alt="" class="img-tomografias">
-  </div>
-</div>
-</div>
-</section>
 
 
 
