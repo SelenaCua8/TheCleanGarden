@@ -391,6 +391,138 @@
 
 /*TOMOGRAFIA DE ARBOLES*/
 
+.tomografia {
+  display: flex;
+  justify-content: center;
+  background-color: white;  
+  padding: 80px;
+  
+}
+
+.p-tomografia {
+  color: #333;
+  white-space: pre-line;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.0;
+  margin-left: 0px;
+  margin-right: 100px;
+  
+}
+
+.h1-tomografia {
+  color: #333;
+  white-space: pre-line;
+  text-align: left;
+}
+.left-content{
+  margin-right: 200px;
+}
+
+.right-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-tomografia {
+  display: flex;
+  flex-direction: row;
+}
+.characteristics p {
+  color: #333;
+  line-height: 1.0;
+  font-size: 18px;
+  margin: 0;
+}
+
+.characteristics ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  white-space: pre-line;
+  transform: translateY(-25px);
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin-left: 15px;
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  overflow: hidden; /* Evitamos que la sombra se salga de los bordes redondeados */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregamos sombra */
+  transition: transform 0.5s, box-shadow 0.3s; /* Agregamos transición a la sombra */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentamos la sombra al pasar el ratón */
+}
+
+.card .content-tomografia {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .content-tomografia {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 10px; /* Agregamos bordes redondeados a la parte frontal y trasera */
+}
+
+.card .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Agregamos bordes redondeados a la imagen */
+}
+
+.card .back {
+  background: #8feb95;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 30px;
+}
+
+.characteristics {
+ 
+  text-align: left;
+  
+}
+
+
+.card .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Cambiado de 'cover' a 'fill' */
+  border-radius: 10px;
+}
+
+
+/* Nuevos estilos y slider */
+/* Nuevos estilos y slider */
+
+
+
+
+
+
+
 
 /*FIN TOMOGRAFIA DE ARBOLES*/
  

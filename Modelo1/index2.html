@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomografía de Árboles</title>
 
     <!--<style>
         .tomografia {
@@ -187,7 +180,7 @@
     </section>
     
 </body>-->
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -196,32 +189,27 @@
     /* Estilos existentes */
     .tomografia {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            background-color: white;
-            margin: 80px;
+            background-color: white;  
+            margin: 50px;
         }
-
+        
         .p-tomografia {
             color: #333;
             white-space: pre-line;
-            margin-left: 30px;
             text-align: left;
             font-size: 18px;
-            line-height: 1.4;
-            margin-right: 30px;
+            line-height: 1.0;
+            
         }
 
         .h1-tomografia {
             color: #333;
             white-space: pre-line;
-            margin-left: 30px;
             text-align: left;
         }
 
-        .card-container {
+        .right-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -234,19 +222,21 @@
             transform: translateY(30%);
             margin-left: 15px;
             
+            
+            
            
             
         }
 
-        .card .content {
-            width: 100%;
-            height: 100%;
+        .card .content-tomografia {
+            width: 200px;
+            height: 250px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             transform-style: preserve-3d;
             transition: transform 0.5s;
         }
 
-        .card:hover .content {
+        .card:hover .content-tomografia {
             transform: rotateY(180deg);
         }
 
@@ -255,7 +245,6 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            border-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -266,27 +255,31 @@
         .card .front img {
             width: 100%;
             height: 100%;
-            
             object-fit: cover;
+            
         }
-
+        .card{
+            width: 200px;
+            height: 280px;
+        }
         .card .back {
+            
             background: #8feb95;
             color: white;
             transform: rotateY(180deg);
-            padding: 20px;
-            text-align: center;
+            padding: 30px;
+           
         }
 
         .characteristics {
             text-align: left;
-            margin-top: 20px;
+            
         }
 
         .characteristics p {
             color: #333;
-            line-height: 1.6;
-            font-size: 16px;
+            line-height: 1.0;
+            font-size: 18px;
             margin: 0;
         }
 
@@ -294,133 +287,129 @@
             list-style: none;
             padding-left: 0;
             text-align: left;
-
             white-space: pre-line;
+            transform: translateY(-25px);
         }
 
         
 
         /* Nuevos estilos y slider */
-        .container {
+         /* Nuevos estilos y slider */
+         .container-tomografia {
             display: flex;
             flex-direction: row;
         }
 
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
+       
 
         .card-slider {
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
 
-        .navigation-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
-            background-color: #ddd;
-            text-align: center;
-            line-height: 30px;
-            cursor: pointer;
-        }
+    
+</style>
 
-        .prev-btn {
-            left: 0;
-        }
-
-        .next-btn {
-            right: 0;
-        }
-  </style>
+    
 </head>
 <body>
 
-<section class="tomografia">
+
+
+
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Flip Card</title>
+</head>
+<body>
   <div class="container">
-    <div class="left-content">
-      <h1 class="h1-tomografia">Tomografía de árboles</h1>
-      <p class="p-tomografia">Se trata del diagnóstico de la sanidad del arbolado mediante el uso de una herramienta de diagnóstico de última generación y novedosa en nuestro país, el Tomógrafo Sónico...</p>
-
-      <div class="characteristics">
-        <p class="p-tomografia">El tomógrafo sónico Picus es una herramienta de diagnóstico por imágenes usada para analizar y cuantificar el estado interno de la madera de los árboles vivos...</p>
-
-        <h1>Características</h1>
-        <ul class="p-tomografia">
-          <!-- Lista de características -->
-          <ul>
-            <li>Analiza y cuantifica el estado interno de la madera.</li>
-            <li>Determina el grado de peligrosidad del arbolado.</li>
-            <li>Entrega una imagen de la sección del tronco con indicaciones de colores.</li>
-            <li>Colores indicativos: negros y marrones oscuros (madera en perfecto estado), marrón claro (madera ligeramente alterada), <br> verdes (estados medios de putrefacción),  violetas (madera muy alterada), celestes y blancos (ahuecamientos).</li>
-            <li>Útil para detectar y cuantificar daños o ahuecamientos internos sin heridas visibles.</li>
-        </ul>
-        </ul>
-      </div>
-    </div>
-
-    <div class="right-content">
-      <div class="slider-container">
-        <div class="card-slider">
-          <div class="card">
-            <!-- Contenido de la primera tarjeta -->
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <img src="./img/tomografiaarbol3.jpg" alt="">
-          
-                    </div>
-                    <div class="back">
-                        <h3>CASO 3</h3>
-                        <p>Se trata de un ahuecamiento interno severo</p>
-          
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Contenido de la segunda tarjeta -->
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <img src="./img/tomografiaarbol3.jpg" alt="">
-          
-                    </div>
-                    <div class="back">
-                        <h3>CASO 3</h3>
-                        <p>Se trata de un ahuecamiento interno severo</p>
-          
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Contenido de la tercera tarjeta -->
-            <div class="card">
-                <div class="content">
-                    <div class="front">
-                        <img src="./img/tomografiaarbol3.jpg" alt="">
-          
-                    </div>
-                    <div class="back">
-                        <h3>CASO 3</h3>
-                        <p>Se trata de un ahuecamiento interno severo</p>
-          
-                    </div>
-                </div>
-            </div>
-          
+    <div class="card">
+      <div class="front"></div>
+      <div class="back">
+        <h1>Back of Card</h1>
+        <p>Additional info on the back of the card</p>
       </div>
     </div>
   </div>
-</section>
+  <style>
+    *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 
+body {
+ height: 100vh;
+ overflow: hidden;
+ background: linear-gradient(45deg, #061de3, #e306ca);
+ font-family: Helvetica, sans-serif;
+ color: rgb(211, 211, 211);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
+.container {
+ width: 350px;
+ height: 500px;
+ perspective: 800px;
+}
 
+.container:hover > .card {
+ cursor: pointer;
+ transform: rotateY(180deg);
+}
+
+.card {
+ height: 100%;
+ width: 100%;
+ position: relative;
+ transition: transform 1500ms;
+ transform-style: preserve-3d;
+}
+
+.front,
+.back {
+ height: 100%;
+ width: 100%;
+ border-radius: 2rem;
+ box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+ position: absolute;
+ backface-visibility: hidden;
+}
+
+.front {
+ background-image: url(https://source.unsplash.com/random/350x500);
+}
+
+.back {
+ background-color: #3a3a3a;
+ transform: rotateY(180deg);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 5rem;
+}
+</style>
+</body>
+
+</html>
 </body>
 </html>
